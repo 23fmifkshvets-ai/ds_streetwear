@@ -363,21 +363,6 @@
     opacity: .9;
   }
   
-  /*.story-btn {
-    background: transparent;
-    border: 1px solid #fff;
-    color: #fff;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
-    padding: 0 22px;
-    min-height: 40px;      
-    min-width: 120px;     
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    transition: background .25s ease, color .25s ease;
-  }*/
   .story-btn {
     background: transparent;
     border: 1px solid #fff;
@@ -533,6 +518,10 @@
     background-position: center;
   }
 
+  .hero-video {
+    height: 50vh;
+  }
+
   .hero-text {
     bottom: 24px;
     font-size: 12px;
@@ -580,4 +569,5 @@
     font-size: 13px;
   }
 }
+
 
