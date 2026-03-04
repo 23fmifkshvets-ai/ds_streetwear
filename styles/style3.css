@@ -512,7 +512,8 @@
   /* ===== HERO ===== */
 
   .hero {
-    height: calc(100dvh - var(--header-height));
+    height: 70dvh;
+    /*height: calc(100dvh - var(--header-height));*/
     background-size: cover;
     background-position: center;
   }
@@ -569,6 +570,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
