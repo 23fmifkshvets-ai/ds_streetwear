@@ -513,6 +513,7 @@
 
   .hero {
     height: 50vh;
+      padding-top:30px;
     /*height: calc(100dvh - var(--header-height));*/
     background-size: cover;
     background-position: center;
@@ -570,6 +571,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
