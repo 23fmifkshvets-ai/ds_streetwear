@@ -119,15 +119,15 @@
   
     /* Hero - відео*/
     .hero {
-      height: calc(100dvh - var(--header-height));
-      margin-top: var(--header-height);
-  
-      position: relative;  
-      overflow: hidden;
-    
-      display: flex;
-      align-items: center;
-      justify-content: center;
+  height: 100dvh;
+  padding-top: var(--header-height);
+
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
     }
   
     .hero-video {
@@ -574,6 +574,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
