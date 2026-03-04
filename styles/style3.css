@@ -513,15 +513,10 @@
 
   .hero {
     height: 50vh;
-      padding-top:30px;
+    padding-top: 40px;
     /*height: calc(100dvh - var(--header-height));*/
     background-size: cover;
     background-position: center;
-  }
-
-  {
-  .hero-video {
-    object-position: center 35%;
   }
 
   .hero-text {
@@ -571,6 +566,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
