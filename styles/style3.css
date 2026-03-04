@@ -522,6 +522,11 @@
     height: 50vh;
   }
 
+ video {
+    max-height: 60vh;
+    object-fit: cover;
+  }
+
   .hero-text {
     bottom: 24px;
     font-size: 12px;
@@ -569,5 +574,6 @@
     font-size: 13px;
   }
 }
+
 
 
