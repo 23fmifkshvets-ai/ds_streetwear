@@ -518,6 +518,9 @@
     background-size: cover;
     background-position: center;
   }
+  .hero-video {
+   object-position: center 10%;   
+  }
 
   .hero-text {
     bottom: 24px;
@@ -566,6 +569,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
