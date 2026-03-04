@@ -120,7 +120,6 @@
     /* Hero - відео*/
     .hero {
   height: 100dvh;
-  padding-top: var(--header-height);
 
   position: relative;
   overflow: hidden;
@@ -574,6 +573,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
