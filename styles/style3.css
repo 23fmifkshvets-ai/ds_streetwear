@@ -528,8 +528,8 @@
   /* ===== HERO ===== */
 
   .hero {
-    margin-top: 40px;
-    height: calc(100dvh - var(--header-height));
+    margin-top: var(--header-height);
+    height: 60vh;
     background-size: cover;
     background-position: center;
   }
@@ -584,6 +584,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
