@@ -500,6 +500,12 @@
  }
 }
 
+@media (orientation: landscape) {
+  .hero {
+    height: 100vh;
+  }
+}
+
 @media (max-width: 767px) {
 
   /* Оновлюємо висоту хедера */
@@ -579,6 +585,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
