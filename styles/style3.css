@@ -486,6 +486,12 @@
     font-size: 14px;
     opacity: 0.8;
   }
+@media (max-width: 1024px){
+    {
+.hero{
+    margin-top: 35px;
+    }
+}
 
 @media (max-width: 767px) {
 
@@ -510,7 +516,7 @@
 
   .hero {
     height: 50vh;
-    margin-top: 35px;
+    margin-top: 40px;
     /*height: calc(100dvh - var(--header-height));*/
     background-size: cover;
     background-position: center;
@@ -566,6 +572,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
