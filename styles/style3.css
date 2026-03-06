@@ -530,8 +530,8 @@
 
   .hero {
     margin-top: var(--header-height);
-    /*height: 60vh;*/
-      transform: scale(0,6)
+    height: 60vh;
+   transform: scale(0,7)
     background-size: cover;
     background-position: center;
   }
@@ -586,6 +586,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
