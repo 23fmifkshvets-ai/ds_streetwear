@@ -488,23 +488,24 @@
     font-size: 14px;
     opacity: 0.8;
   }
+ /* ===== @@@ media @@@===== */
 @media (max-width: 1024px) {
   .header {
     height: var(--header-height);
   }
-
   .header-left,
   .header-right { 
     padding: 0 12px; 
     gap: 14px; 
   }
-  /* ===== HERO ===== */
+  /* ===== HERO 1024===== */
    .hero {
-    height: 25dvh;
+    height: 30dvh;
     background-size: cover;
     background-position: center;
   }
 }
+
 @media (orientation: landscape) and (max-height: 500px)  {
         .hero,
         .hero-video {
@@ -529,7 +530,7 @@
     gap: 14px; 
   }
 
-  /* ===== HERO ===== */
+  /* ===== HERO 767===== */
 
   .hero {
     height: 35dvh;
@@ -584,6 +585,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
