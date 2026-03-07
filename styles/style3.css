@@ -13,8 +13,9 @@
   html {
     overscroll-behavior-y: contain;  
   }
+ 
   html, body {
-    overflow-x: hidden;
+  overflow-x: clip; /*or hidden*/
   }
    
   img, video {
@@ -42,12 +43,13 @@
    .header-wrapper {
      position: sticky;
      top:0;
+     width: 100%;
      z-index:1000;
     }
 
    .header { 
     width: 100%; 
-    position: relative; 
+    position: sticky; 
     top: 0; 
     left: 0; 
     height: var(--header-height);
@@ -57,9 +59,10 @@
     align-items: center; 
 
     background: #000000; 
-    z-index: 1000; 
+    z-index: 1001;
     border-bottom: 1px solid #000000;
     }
+
     .header-left,
     .header-right {
       display: flex;
@@ -75,7 +78,7 @@
       justify-content: flex-end;
     }
     
-.icon {
+   .icon {
     background: none;
     border: none;
     padding: 6px;
@@ -122,7 +125,7 @@
      top: var(--header-height);*/
      height: calc(70dvh - var(--header-height));
      
-     overflow: hidden;
+     overflow: unset;
 
      display: flex;
      align-items: center;
@@ -239,11 +242,11 @@
     /*---КНОПКА----*/
     .cart-icon{
      font-size: 24px;
-  }
+   }
    .add-to-cart{
     position: absolute;
-    bottom: 24px;
-    right: 24px;
+    bottom: 34px;
+    right: 44px;
     z-index: 2;
 
     display: flex;
@@ -264,10 +267,11 @@
     transform: translateY(10px);
     transition: 0.25s;
   }
+
    .product-image:hover .add-to-cart{
     opacity: 1;
     transform: translateY(0);
-   }
+}
 
   .cart-text{
    opacity: 0;
@@ -313,7 +317,7 @@
   
     /*badge зі знижкою */
     .sale-badge {
-      display: inline-block;     /* ❗ не на всю ширину */
+      display: inline-block;     
       align-self: center;
       margin-top: 4px;
     
@@ -658,5 +662,3 @@
     font-size: 13px;
   }
 }
-
-
