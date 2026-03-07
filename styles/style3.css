@@ -191,10 +191,14 @@
       height: 100%;       
       object-fit: cover;   
       margin-bottom: 10px;
-      /* height: auto;
-      display: block;*/
+      /*transition: transform 0.35s ease, filter 0.35s ease;*/
     }
-    
+
+     /*.product-image:hover img{
+     transform: scale(1.05);
+     filter: brightness(0.92);
+    }
+    */
     .product-card h3 {
       margin-top: 16px;
       font-size: 13px;
@@ -205,14 +209,78 @@
   
     .product-image {
       width: 100%;
-      aspect-ratio: 1 / 1;     /* або 1 / 1 якщо хочеш квадрат */
+      aspect-ratio: 1 / 1;    
       display: flex;
       align-items: center;
       justify-content: center;
       background: #fff;
       overflow: hidden;
       margin-bottom: 12px;
+
+      position: relative; 
     }
+
+    .product-image::after{
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0);
+      transition: 0.35s;
+      pointer-events: none;
+      z-index: 1;
+   }
+
+     .product-image:hover::after{
+      background: rgba(0,0,0,0.08);
+   }
+
+    /*---КНОПКА----*/
+    .cart-icon{
+     font-size: 24px;
+  }
+   .add-to-cart{
+    position: absolute;
+    bottom: 34px;
+    right: 44px;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    background: white;
+    border-radius: 30px;
+    border: none;
+
+    padding: 10px;
+    cursor: pointer;
+
+    width: 52px;
+    overflow: hidden;
+
+    opacity: 0;                 
+    transform: translateY(10px);
+    transition: 0.25s;
+  }
+   .product-image:hover .add-to-cart{
+    opacity: 1;
+    transform: translateY(0);
+   }
+
+  .cart-text{
+   opacity: 0;
+   white-space: nowrap;
+   transition: 0.25s;
+}
+
+  .add-to-cart:hover{
+   width: 140px;
+}
+
+.add-to-cart:hover .cart-text{
+  opacity: 1;
+}
+
     
     /* САМА КАРТИНКА */
   .product-image img {
@@ -588,24 +656,3 @@
     font-size: 13px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
