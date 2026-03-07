@@ -41,16 +41,17 @@
     
 /* HEADER */ 
    .header-wrapper {
+     position: -webkit-sticky;
      position: sticky;
      top:0;
      width: 100%;
      z-index:1000;
+     background: #000000;
     }
 
    .header { 
     width: 100%; 
-    position: sticky; 
-    top: 0; 
+
     left: 0; 
     height: var(--header-height);
 
@@ -58,7 +59,7 @@
     grid-template-columns: 1fr auto 1fr; 
     align-items: center; 
 
-    background: #000000; 
+    /*background: #000000; */
     z-index: 1001;
     border-bottom: 1px solid #000000;
     }
@@ -662,3 +663,4 @@
     font-size: 13px;
   }
 }
+
