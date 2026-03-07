@@ -14,7 +14,8 @@
 <body>
 
   <!-- HEADER -->
-<header class="header">
+<div class="header-wrapper">
+ <header class="header">
   <div class="header-left">
     <button class="icon">
       <svg class="icon-svg" viewBox="0 0 24 24">
@@ -43,7 +44,8 @@
     </button>
     <div class="avatar"></div>
   </div>
-</header>
+ </header>
+</div>
 
 
   <section class="hero">
@@ -64,14 +66,14 @@
     </div>
   </section>
   
-  <script>
+  <!--<script>
   if ('connection' in navigator) {
     const conn = navigator.connection;
     if (conn.saveData || conn.effectiveType.includes('2g')) {
       document.querySelector('.hero-video')?.remove();
     }
   }
-</script>
+</script>-->
 
 
     <!-- HERO -->
@@ -96,12 +98,12 @@
           </button> 
         </div>
       
-        <h3>DC Goth Vein Tee</h3>
+        <h3>Oversized Streetwear T-Shirt</h3>
         <p class="subtitle">New collection of 2026</p>
       
         <p class="price">
-          <span class="old">29,90€</span>
-          26,90€
+          <span class="old">24,90€</span>
+          19,90€
         </p>
       
         <!--<div class="sale-badge">20% SALE</div>-->
@@ -111,7 +113,7 @@
 
       <article class="product-card">
         <div class="product-image">
-          <img src="./img/jackets/black1_forw.webp" alt="T-shirt">
+          <img src="./img/jacket/black1_forw.webp" alt="T-shirt">
               <button class="add-to-cart">
                 <span class="cart-icon">🛒</span>
                 <span class="cart-text">Add to cart</span>
@@ -300,12 +302,7 @@
 
   </div>
 </footer>
-
-
-
 </body>
-
 </html>
-
 
 
