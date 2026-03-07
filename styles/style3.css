@@ -97,14 +97,7 @@
     transform: scale(1.05);
     transition: 0.2s;
   }
-    /*---Стиль для малюнка --.icon {
-      background: none;
-      border: none;
-      color: #fff;
-      font-size: 18px;
-      cursor: pointer;
-    }*/
-    
+ 
     .logo-img {
       height: 58px;
       display: block;
@@ -138,7 +131,7 @@
     }
   
     .hero-video {
-     position: absolute;
+     /*position: absolute;*/
      inset:0;
      width: 100%;
      height: 100%;
@@ -158,7 +151,6 @@
     );
     z-index: 2;
   }
-
 
     .hero-text {
       position: absolute;
@@ -592,6 +584,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
