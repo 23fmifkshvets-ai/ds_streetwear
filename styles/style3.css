@@ -503,7 +503,8 @@
   /* ===== HERO ===== */
 
   .hero {
-    height: 35dvh;
+    height: 100%;
+    width: 100%;
     background-size: cover;
     background-position: center;
   }
@@ -543,7 +544,7 @@
   /* ===== HERO ===== */
 
   .hero {
-    height: 45dvh;
+    height: 35dvh;
     background-size: cover;
     background-position: center;
   }
@@ -595,6 +596,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
