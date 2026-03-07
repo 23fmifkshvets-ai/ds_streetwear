@@ -117,8 +117,8 @@
   
     /* Hero - відео*/
     .hero {
-     /*position: relative;*/
-     top: var(--header-height);
+     /*position: relative;
+     top: var(--header-height);*/
      height: calc(70dvh - var(--header-height));
      
      overflow: hidden;
@@ -585,6 +585,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
