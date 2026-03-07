@@ -39,9 +39,14 @@
     }
     
 /* HEADER */ 
+    .header-wrapper{
+     position: sticky;
+     top:0;
+     z-index:1000;
+    }
    .header { 
     width: 100%; 
-    position: fixed; 
+    position: relative; 
     top: 0; 
     left: 0; 
     height: var(--header-height);
@@ -587,6 +592,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
