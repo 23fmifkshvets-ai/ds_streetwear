@@ -13,6 +13,7 @@
 
   html, body {
     overflow-x: hidden;
+    overscroll-behavior-y: none
   }
    
   img, video {
@@ -585,6 +586,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
