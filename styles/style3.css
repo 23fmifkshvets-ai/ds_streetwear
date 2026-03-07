@@ -245,7 +245,7 @@
     .sale-badge {
       display: inline-block;     /* ❗ не на всю ширину */
       align-self: center;
-      margin-top: 12px;
+      margin-top: 4px;
     
       padding: 6px 14px;
       background: #000;
@@ -588,6 +588,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
