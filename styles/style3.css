@@ -18,32 +18,33 @@
   }
    
   img, video {
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    display: block;
   }
 
   body {
-      margin: 0;
-      font-family: 'JetBrains Mono', monospace;
-      font-weight: 400;
-      line-height: 1.4;
-      background: #fff;
-      color: #111;
+     margin: 0;
+     font-family: 'JetBrains Mono', monospace;
+     font-weight: 400;
+     line-height: 1.4;
+     background: #fff;
+     color: #111;
     }
     
     /* LAYOUT */
     .container {
       max-width: 1280px;
       margin: 0 auto;
-      padding: 80px 15px;
+      padding: 95px 15px;
     }
     
 /* HEADER */ 
-    .header-wrapper{
+   .header-wrapper {
      position: sticky;
      top:0;
      z-index:1000;
     }
+
    .header { 
     width: 100%; 
     position: relative; 
@@ -587,6 +588,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
