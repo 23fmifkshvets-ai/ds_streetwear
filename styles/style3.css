@@ -9,6 +9,9 @@
   
   :root {
   --header-height: 64px;
+  --z-index-header: 1000;
+  --z-index-dropdown: 1100;
+  --z-index-modal: 2000;
   }
   html {
     overscroll-behavior-y: contain;  
@@ -38,6 +41,25 @@
       margin: 0 auto;
       padding: 95px 15px;
     }
+
+/* SCROLLBAR */
+   ::-webkit-scrollbar {
+    width: 8px;
+}
+
+   ::-webkit-scrollbar-track {
+   background: #000; 
+}
+
+   ::-webkit-scrollbar-thumb {
+    background: #333; 
+    border-radius: 4px;
+}
+
+/* Повзунок при наведенні */
+   ::-webkit-scrollbar-thumb:hover {
+   background: #f5c400; 
+}
     
 /* HEADER */ 
    .header-wrapper {
@@ -45,7 +67,7 @@
      position: sticky;
      top:0;
      width: 100%;
-     z-index:1000;
+     z-index: var(--z-index-header);
      background: #000000;
     }
 
@@ -663,4 +685,3 @@
     font-size: 13px;
   }
 }
-
