@@ -205,7 +205,7 @@
   
     .product-image {
       width: 100%;
-      aspect-ratio: 3 / 4;     /* або 1 / 1 якщо хочеш квадрат */
+      aspect-ratio: 1 / 1;     /* або 1 / 1 якщо хочеш квадрат */
       display: flex;
       align-items: center;
       justify-content: center;
@@ -588,6 +588,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
