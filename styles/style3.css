@@ -13,7 +13,6 @@
 
   html, body {
     overflow-x: hidden;
-    /*overscroll-behavior-y: none*/
   }
    
   img, video {
@@ -28,7 +27,6 @@
       line-height: 1.4;
       background: #fff;
       color: #111;
-      overscroll-behavior-y: none;
     }
     
     /* LAYOUT */
@@ -587,6 +585,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
