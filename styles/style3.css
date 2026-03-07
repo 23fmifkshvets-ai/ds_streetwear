@@ -221,7 +221,7 @@
     object-fit: contain;   
   }
     .subtitle {
-      font-size: 12px;
+      font-size: 14px;
       opacity: .6;
       margin: 4px 0;
       color: #667;
@@ -231,7 +231,7 @@
     .price {
       margin-top: 8px;
       font-weight: 600;
-      font-size: 12px;
+      font-size: 13px;
       color: #667;
     }  
     
@@ -588,6 +588,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
