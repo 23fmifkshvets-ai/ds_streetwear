@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="../../styles/style4.css">
+    <link rel="stylesheet" href="/styles/style4.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -19,16 +19,13 @@
       </svg>
     </button>
 
-    <button class="icon">
-      <svg class="icon-svg" viewBox="0 0 24 24">
-        <circle cx="11" cy="11" r="7"/>
-        <line x1="16.5" y1="16.5" x2="21" y2="21"/>
-      </svg>
-    </button>
+     <!--svg icon circle-->
   </div>
 
   <div class="header-center">
-    <img src="../../img/elements/logo.png" alt="DS" class="logo-img">
+    <a href="/index3.html" class="logo-link">
+    <img src="/img/elements/logo.png" alt="DS" class="logo-img">
+    </a>
   </div>
 
   <div class="header-right">
@@ -51,7 +48,7 @@
        <button class="expand-btn" onclick="zoomImage()">
         <!--<svg viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" stroke="currentColor" fill="none" stroke-width="2"/></svg>-->
        </button>
-       <img id="product-image" src="../../img/t-shirt/DC Goth Vein Tee.png" alt="DC Goth Vein Tee">
+       <img id="product-image" src="/img/t-shirt/DC Goth Vein Tee.png" alt="DC Goth Vein Tee">
        <!--<span class="image-counter">1/2</span>-->
      </div>
     </div>
@@ -61,7 +58,7 @@
       
       <div class="product-description">
         <h2 class="desc-heading">Step into the shadow.</h2>
-        <p>
+        <p> 
           This piece blends dark angelic energy with raw street presence. 
           The back features a highly detailed fallen angel artwork wrapped in sharp, 
           chaotic wing structures — a symbol of strength, 
@@ -76,25 +73,31 @@
         <p>This isn’t just a T-shirt. It’s presence.</p>
         <p>DS STREETWEAR — Wear the energy.</p>
       </div>
-
+    </div>
+    
+  </div>
+   <div class="product-btn_container">
+      <div class="product-btn">
       <div class="product-controls">
         <div class="size-selector">
-          <button class="size-btn">XS</button>
           <button class="size-btn">M</button>
+          <button class="size-btn">L</button>
           <button class="size-btn">XL</button>
+          <button class="size-btn">XXL</button>
+          <button class="size-btn">XXXL</button>
         </div>
-        <button class="guide-btn">Order size</button>
       </div>
-
+    
+<!--<button class="guide-btn">Order size</button>-->
       <div class="purchase-actions">
         <button class="btn-buy">Buy now</button>
         <!--<button class="btn-wishlist">In wish list</button>-->
       </div>
     </div>
-
+  </div> 
   </div>
 </main>
- <!--<script src="../../hpscr/stat.js"></script>--> 
+ <!--<script src="/hpscr/stat.js"></script> -->
  <script>document.querySelectorAll('.size-btn').forEach(button => {
   button.addEventListener('click', () => {
     // Прибираємо активний клас у всіх
@@ -104,12 +107,4 @@
   });
 });</script>  
 </body>
-
 </html>
-
-
-
-
-
-
-
