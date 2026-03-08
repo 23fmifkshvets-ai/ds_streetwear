@@ -375,10 +375,14 @@ a.logo-link:hover .logo-img {
   .product-container {
     display: grid;  
     grid-template-columns: 1fr;  
+    padding:15px;
   }
 
   .product-gallery {
     order: 1;  
+  }
+  .size-btn {
+    padding: 9px 12px
   }
 
   .product-info {
@@ -391,8 +395,11 @@ a.logo-link:hover .logo-img {
     height: auto;     
     max-height: 500px;
   }
-
   .product-page {
     padding: 20px 10px;
   }
+    
 }
+
+
+
