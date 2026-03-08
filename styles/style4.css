@@ -377,12 +377,15 @@ a.logo-link:hover .logo-img {
     grid-template-columns: 1fr;  
     padding:15px;
   }
+  .btn-buy{
+   padding: 12px 60px;
+  }
 
   .product-gallery {
     order: 1;  
   }
   .size-btn {
-    padding: 9px 12px
+    padding: 9px 18px
   }
 
   .product-info {
@@ -400,6 +403,7 @@ a.logo-link:hover .logo-img {
   }
     
 }
+
 
 
 
