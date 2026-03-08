@@ -268,8 +268,8 @@
    }
    .add-to-cart{
     position: absolute;
-    bottom: 12px;
-    right: 12px;
+    bottom: 34px;
+    right: 44px;
     z-index: 2;
 
     display: flex;
@@ -685,5 +685,3 @@
     font-size: 13px;
   }
 }
-
-
