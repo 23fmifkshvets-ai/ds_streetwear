@@ -36,7 +36,8 @@
      font-weight: 400;
      line-height: 1.4;
      background: #fff;
-     color: #111;
+     color: #111
+     overscroll-behavior: none;
     }
 
    /* body > *:first-child {
@@ -759,5 +760,6 @@
     font-size: 13px;
   }
 }
+
 
 
