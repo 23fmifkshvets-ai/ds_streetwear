@@ -682,6 +682,10 @@
 }
 
 @media (orientation: landscape) and (max-height: 500px)  {
+        header-wrapper {
+            opacity: 1;
+        }
+        
         .hero,
         .hero-video {
             display: none;
@@ -760,6 +764,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
