@@ -424,6 +424,7 @@
     --overlay: 0;
 
     scroll-snap-align: start;
+    scroll-snap-stop: always;
     scroll-margin-top:1px;
    
     /*scroll-snap-stop: always;*/
@@ -765,6 +766,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
