@@ -524,11 +524,22 @@
     </div>
 
   </div>
+   
 </footer>
+<script>let speed = 0.6; // чим менше, тим повільніше
 
+window.addEventListener("wheel", (e) => {
+  if (Math.abs(e.deltaY) < 10) return;
+
+  window.scrollBy({
+    top: e.deltaY * speed,
+    behavior: "smooth"
+  });
+});</script>
 </body>
 
 </html>
+
 
 
 
