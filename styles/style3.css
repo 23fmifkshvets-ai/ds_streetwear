@@ -122,15 +122,13 @@
       transition:0.3s;
      }
    
-    #menu:target{
-      opacity:1;
-      pointer-events:auto;
-    }
-
+    
     .menu{
       display:flex;
       flex-direction:column;
       gap:30px;
+      font-weight: 400;
+      line-height: 1.4  
      }
 
     .menu a{
@@ -763,3 +761,4 @@
     font-size: 13px;
   }
 }
+
