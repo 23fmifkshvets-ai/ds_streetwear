@@ -126,13 +126,11 @@
     .menu{
       display:flex;
       flex-direction:column;
-      gap:30px;
-      font-weight: 400;
-      line-height: 1.4  
+      gap:30px;  
      }
 
     .menu a{
-     font-size:28px;
+     font-size:18px;
      color:white;
      text-decoration:none;
      }
@@ -761,4 +759,5 @@
     font-size: 13px;
   }
 }
+
 
