@@ -12,17 +12,37 @@
 
 </head>
 <body>
-
+<div id="top" style="scroll-snap-align: start; position: absolute; top: 0;"></div>
   <!-- HEADER -->
 <div class="header-wrapper">
  <header class="header">
   <div class="header-left">
-    <button class="icon">
-      <svg class="icon-svg" viewBox="0 0 24 24">
-        <path d="M3 6h18M3 12h18M3 18h18" />
+    <a href="#menu" class="icon">
+      <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+       <path d="M3 6h18M3 12h18M3 18h18" />
       </svg>
-    </button>
+    </a>
+    
+   <div id="menu" class="menu-overlay">
 
+   <a href="#!" class="menu-close">✕</a>
+   
+    <nav class="menu">
+     <a href="#story1">Story 1</a>
+     <a href="#story2">Story 2</a>
+     <a href="#story3">Story 3</a>
+     </nav>
+    </div>
+
+    
+   <!--<div class="menu-item">
+
+     <nav class="navbar">
+      
+     <li><a href="#">Story1</a></li>
+     <li><a href="#">Story2</a></li>
+     <li><a href="#">Story3</a></li> 
+    </div> -->
     <!--<button class="icon">
       <svg class="icon-svg" viewBox="0 0 24 24">
         <circle cx="11" cy="11" r="7"/>
@@ -30,6 +50,7 @@
       </svg>
     </button>-->
   </div>
+  
 
   <div class="header-center">
     <img src="img/elements/logo.png" alt="DS" class="logo-img">
@@ -91,7 +112,7 @@
 
       <article class="product-card">
         <div class="product-image">
-          <a href="pages/product/7.html" target="_blank">
+          <a href="/pages/product/7.html" target="_blank">
           <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
           <button class="add-to-cart">
             <span class="cart-icon">🛒</span>
@@ -113,9 +134,9 @@
     
       <!-- PROD-CARD -->
 
-            <article class="product-card">
+        <article class="product-card">
         <div class="product-image">
-          <a href="./pages/product/7.html" target="_blank">
+          <a href="/pages/product/7.html" target="_blank">
           <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
           <button class="add-to-cart">
             <span class="cart-icon">🛒</span>
@@ -139,7 +160,7 @@
 
       <article class="product-card">
         <div class="product-image">
-          <a href="../pages/product/7.html" target="_blank">
+          <a href="/pages/product/7.html" target="_blank">
           <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
           <button class="add-to-cart">
             <span class="cart-icon">🛒</span>
@@ -163,7 +184,7 @@
       
       <article class="product-card">
         <div class="product-image">
-          <a href="../../pages/product/7.html" target="_blank">
+          <a href="/pages/product/7.html" target="_blank">
           <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
           <button class="add-to-cart">
             <span class="cart-icon">🛒</span>
@@ -407,7 +428,7 @@
   <!-- STORY SECTIONS -->
   <section class="stories">
 
-    <section class="story story-1">
+    <section id="story1" class="story story-1">
       <div class="story-content">
         <div class="story-label">What's new?</div>
         <button class="story-btn">
@@ -429,9 +450,7 @@
       </div>
     </section>
   
-    <div class="story-gap"></div>
-  
-    <section class="story story-2">
+    <section id="story2" class="story story-2">
       <div class="story-products">
         <img src="./img/elements/st2.2.png" alt="T-shirts">
       </div>
@@ -456,10 +475,8 @@
         
       </div>
     </section>
-
-    <div class="story-gap"></div>
     
-    <section class="story story-3">
+    <section id="story3" class="story story-3">
       <div class="story-content">
         <div class="story-label">DS Forge Collection</div>
         <button class="story-btn">
@@ -482,7 +499,9 @@
     </section>
   
   </section>
-  
+
+
+  <div class="story-gap"></div>
   
  <!-- FOOTER-->
  <footer class="footer">
@@ -506,6 +525,9 @@
 
   </div>
 </footer>
+
 </body>
+
 </html>
+
 
