@@ -764,15 +764,17 @@
            color: white;
           }
 
-          .icon:hover .icon-svg, .logo-img
-          .icon:focus .icon-svg, .logo-img
-          .icon:active .icon-svg, .logo-img {
+          .icon:hover .icon-svg,
+          .icon:focus .icon-svg,
+          .icon:active .icon-svg{
           filter: drop-shadow(0 0 4px rgba(0,0,0,0.9));
           } 
 
            .logo-img {
            content: url("../img/elements/logo_black_transparent.png");
+           filter: drop-shadow(0 0 6px rgba(255,255,255,0.35));    
           }
+          
 
         .hero,
         .hero-video {
@@ -854,6 +856,7 @@
   }
 }
 /* #endregion */
+
 
 
 
