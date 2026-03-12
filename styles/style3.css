@@ -124,7 +124,7 @@
      }
    
     
-    .menu{
+    .menu-item{
       display:flex;
       flex-direction:column;
       gap:30px;  
@@ -769,6 +769,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
