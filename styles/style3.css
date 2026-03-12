@@ -684,10 +684,12 @@
 
 @media (orientation: landscape) and (max-height: 500px)  {
         .header-wrapper,
-        .header,
-         border-bottom {
+        .header {
            background: transparent;
-        }   
+        }  
+         border-bottom {
+         display: none;
+         }
         .icon-svg {
          fill: black;
         }
@@ -772,6 +774,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
