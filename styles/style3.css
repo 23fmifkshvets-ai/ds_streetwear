@@ -725,9 +725,9 @@
           .logo-img,
          .icon-svg {
           filter:
-          drop-shadow(0 0 4px white)
-          drop-shadow(0 0 4px white)
-          drop-shadow(0 0 4px white);
+          drop-shadow(0 0 2px white)
+          drop-shadow(0 0 2px white)
+          drop-shadow(0 0 2px white);
           transition: filter 0.2s ease, color 0.2s ease;
          }
 
@@ -834,6 +834,7 @@
   }
 }
 /* #endregion */
+
 
 
 
