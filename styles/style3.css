@@ -751,7 +751,7 @@
           } 
 
            .logo-img {
-           content: url("./img/elements/logo_black_transparent.png");
+           content: url("../../img/elements/logo_black_transparent.png");
           }
 
         .hero,
@@ -834,5 +834,6 @@
   }
 }
 /* #endregion */
+
 
 
