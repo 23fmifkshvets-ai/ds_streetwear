@@ -683,11 +683,10 @@
 }
 
 @media (orientation: landscape) and (max-height: 500px)  {
-        .header-wrapper {
-           opacity: 1;
-        }
-        
-        
+        .header-wrapper,
+        .header {
+           background: transparent;
+        }   
         .hero,
         .hero-video {
             display: none;
@@ -735,6 +734,9 @@
   .product-card h3 {
     font-size: 12px;
   }
+   .add-to-cart{
+    display: none;
+  }
 
   /* ===== STORY ===== */
 
@@ -766,6 +768,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
