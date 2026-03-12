@@ -22,7 +22,7 @@
   }
  
   html, body {
-  overflow-x: clip; /*or hidden*/
+  overflow-x: clip; 
   }
    
   img, video {
@@ -37,7 +37,6 @@
      line-height: 1.4;
      background: #fff;
      color: #111;
-     overscroll-behavior: none;
     }
 
    /* body > *:first-child {
@@ -51,25 +50,30 @@
       padding: 95px 15px;
     }
 
-/* SCROLLBAR */
-   ::-webkit-scrollbar {
-    width: 8px;
-}
+/* #region SCROLLBAR */
+  ::-webkit-scrollbar {
+  width: 8px;
+   }
 
-   ::-webkit-scrollbar-track {
+  ::-webkit-scrollbar-track {
    background: #000; 
-}
+  }
 
-   ::-webkit-scrollbar-thumb {
-    background: #333; 
-    border-radius: 4px;
-}
+  ::-webkit-scrollbar-thumb {
+  background: #333; 
+  border-radius: 4px;
+  }
 
-/* Повзунок при наведенні */
-   ::-webkit-scrollbar-thumb:hover {
-   background: #f5c400; 
+  /* Повзунок при наведенні */
+  ::-webkit-scrollbar-thumb:hover {
+  background: #f5c400; 
 }
-/* HEADER */ 
+/* #endregion */
+
+
+
+/* #region HEADER */
+
    .header-wrapper {
      position: -webkit-sticky;
      position: sticky;
@@ -123,15 +127,19 @@
       transition:0.3s;
      }
    
-    
-    .menu-item{
+    #menu:target{
+      opacity:1;
+      pointer-events:auto;
+    }
+
+    .menu{
       display:flex;
       flex-direction:column;
-      gap:30px;  
+      gap:30px;
      }
 
     .menu a{
-     font-size:18px;
+     font-size:28px;
      color:white;
      text-decoration:none;
      }
@@ -185,8 +193,12 @@
       border-radius: 50%;
       background: #555;
     }
-  
-    /* Hero - відео*/
+/* #endregion */ 
+
+
+
+/* #region HERO */
+
     .hero {
      /*position: relative;
      top: var(--header-height);*/
@@ -239,8 +251,11 @@
       text-decoration: none;
       color: #111;
     }  
-  
-      /* PRODUCT CARD */
+/* #endregion */
+
+
+
+/* #region PRODUCT CARD */
   
     .products {
      display: grid;
@@ -398,9 +413,11 @@
       letter-spacing: 1px;
       text-transform: uppercase;
     }
-    
+/* #endregion */  
 
-  /* ОДНА STORY */
+
+
+/* #region STORY */
   .stories {
   display: block;
   }
@@ -424,7 +441,6 @@
     --overlay: 0;
 
     scroll-snap-align: start;
-    scroll-snap-stop: always;
     scroll-margin-top:1px;
    
     /*scroll-snap-stop: always;*/
@@ -581,7 +597,11 @@
     transform: translateX(3px);
   }
 
-    /* FOOTER */
+  /* #endregion */
+
+
+
+/* #region FOOTER */
     .footer {
       background: #000;
       color: #fff;
@@ -664,7 +684,12 @@
     font-size: 14px;
     opacity: 0.8;
   }
- /* ===== @@@ media @@@===== */
+
+  /* #endregion */
+
+
+
+ /* #region ===== @@@ media @@@===== */
 @media (max-width: 1024px) {
   .header {
     height: var(--header-height);
@@ -685,24 +710,62 @@
 @media (orientation: landscape) and (max-height: 500px)  {
         .header-wrapper,
         .header {
-           background: transparent;
-           border-bottom:1px solid white;
-        }  
-    
-        .icon-svg {
-         fill: black;
+        border-bottom: 1px solid transparent;
+        background-color: transparent;
         }
+        
+        .icon{
+          color: black;
+        } 
+
+         .icon-svg path {
+          stroke: currentColor;
+          fill: currentColor;
+         }
+        
+         .icon-svg {
+          filter:
+          drop-shadow(0 0 4px white)
+          drop-shadow(0 0 4px white)
+          drop-shadow(0 0 4px white);
+          transition: filter 0.2s ease, color 0.2s ease;
+         }
+
+          .icon-svg path,
+          .icon-svg line,
+          .icon-svg circle {
+          stroke: currentColor;
+          fill: currentColor;
+          }
+
+          .icon:hover,
+          .icon:focus,
+          .icon:active {
+           color: white;
+          }
+
+          .icon:hover .icon-svg, .logo-img
+          .icon:focus .icon-svg, .logo-img
+          .icon:active .icon-svg, .logo-img {
+          filter: drop-shadow(0 0 4px rgba(0,0,0,0.9));
+          } 
+
+           .logo-img {
+           content: url("/img/elements/ds_logo_inv.png");
+          }
+
         .hero,
         .hero-video {
             display: none;
         }
     }
     
+
 @media (max-width: 767px) {
 
-  :root {
-    --header-height: 60px;
-  }
+      :root {
+     --header-height: 60px;
+   }
 
   /* ===== HEADER ===== */ 
   .header {
@@ -739,9 +802,6 @@
   .product-card h3 {
     font-size: 12px;
   }
-   .add-to-cart{
-    display: none;
-  }
 
   /* ===== STORY ===== */
 
@@ -773,17 +833,4 @@
     font-size: 13px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* #endregion */
