@@ -722,7 +722,7 @@
           stroke: currentColor;
           fill: currentColor;
          }
-        
+          .logo-img,
          .icon-svg {
           filter:
           drop-shadow(0 0 4px white)
@@ -751,7 +751,7 @@
           } 
 
            .logo-img {
-           content: url("/img/elements/ds_logo_inv.png");
+           content: url("img/elements/logo_black_transparent.png");
           }
 
         .hero,
@@ -834,3 +834,4 @@
   }
 }
 /* #endregion */
+
