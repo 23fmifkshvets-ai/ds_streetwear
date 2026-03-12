@@ -241,7 +241,7 @@
       bottom: 60px;
       transform: translateX(-50%);
       color: #fff;
-      font-size: 24px ! important;
+      font-size: 20px ! important;
       text-align: center;
       letter-spacing: 2px;
       z-index: 3;
@@ -835,6 +835,7 @@
   }
 }
 /* #endregion */
+
 
 
 
