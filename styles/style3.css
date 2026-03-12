@@ -685,7 +685,7 @@
 @media (orientation: landscape) and (max-height: 500px)  {
         .header-wrapper,
         .header,
-        .border-bottom {
+         border-bottom {
            background: transparent;
         }   
         .hero,
@@ -769,6 +769,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
