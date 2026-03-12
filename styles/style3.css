@@ -688,6 +688,9 @@
          border-bottom {
            background: transparent;
         }   
+        .icon-svg {
+         fill: black;
+        }
         .hero,
         .hero-video {
             display: none;
@@ -769,6 +772,7 @@
     font-size: 13px;
   }
 }
+
 
 
 
