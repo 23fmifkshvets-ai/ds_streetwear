@@ -772,7 +772,8 @@
 
            .logo-img {
            content: url("../img/elements/logo_black_transparent.png");
-           filter: drop-shadow(0 0 6px rgba(255,255,255,0.35));    
+           filter: drop-shadow(0 0 6px rgba(255,255,255,0.55));  
+           mix-blend-mode: difference;    
           }
           
 
@@ -856,6 +857,7 @@
   }
 }
 /* #endregion */
+
 
 
 
