@@ -15,7 +15,7 @@
   }
 
   html {
-    /*overscroll-behavior-y: contain;*/  
+    /**/  
     scroll-behavior: smooth;
     scroll-snap-type: y proximity;
     scroll-padding-top: 0;
@@ -37,6 +37,7 @@
      line-height: 1.4;
      background: #fff;
      color: #111;
+     overscroll-behavior-y: contain; 
     }
 
    /* body > *:first-child {
@@ -859,6 +860,7 @@
   }
 }
 /* #endregion */
+
 
 
 
