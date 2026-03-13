@@ -525,10 +525,24 @@
 
   </div>
 </footer>
+<script>
+let scrollTimeout;
 
+window.addEventListener("scroll", () => {
+  clearTimeout(scrollTimeout);
+
+  scrollTimeout = setTimeout(() => {
+    window.scrollTo({
+      top: window.scrollY,
+      behavior: "smooth"
+    });
+  }, 70);
+});
+</script>
 </body>
 
 </html>
+
 
 
 
