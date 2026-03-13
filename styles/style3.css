@@ -458,7 +458,7 @@
     overflow: hidden;
     position: sticky;
     isolation: isolate;
-    transform: translateZ(0); 
+   /* transform: translateZ(0); */
     --overlay: 0;
 
     scroll-snap-align: start;
