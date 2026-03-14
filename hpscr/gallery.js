@@ -1,10 +1,10 @@
 const images = [
-    "../../img/t-shirt/gvt/gvt-fw.jpg",
-    "../../img/t-shirt/gvt/gvt-bk.jpg",
-    "../../img/t-shirt/gvt/gvt-1.jpg",
-    "../../img/t-shirt/gvt/gvt-2.jpg",
-    "../../img/t-shirt/gvt/gvt-3.jpg",
-    "../../img/t-shirt/gvt/gvt-4.jpg"
+    "../../img/gvt/gvt-fw.jpg",
+    "../../img/gvt/gvt-bk.jpg",
+    "../../img/gvt/gvt-1.jpg",
+    "../../img/gvt/gvt-2.jpg",
+    "../../img/gvt/gvt-3.jpg",
+    "../../img/gvt/gvt-4.jpg"
 ];
 
 let currentImage = 0;
