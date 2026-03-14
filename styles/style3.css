@@ -286,7 +286,8 @@
     }
 
     .products-group {
-      scroll-snap-align: start;
+     padding: 0;
+     scroll-snap-align: start;
     }
     .product-card {
       display: flex;
