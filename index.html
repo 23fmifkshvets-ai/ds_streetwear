@@ -525,36 +525,26 @@
 
   </div>
 </footer>
-  <script>
+<script>
 let startY = 0;
-let lastMove = 0;
 
 window.addEventListener("touchstart", e => {
   startY = e.touches[0].clientY;
-  lastMove = Date.now();
-}, {passive:true});
+}, { passive: true });
 
 window.addEventListener("touchmove", e => {
-
-  let now = Date.now();
-  let speed = now - lastMove;
 
   let currentY = e.touches[0].clientY;
   let diff = startY - currentY;
 
-  let multiplier = speed < 30 ? 0.25 : 0.6;
-
   window.scrollBy({
-    top: diff * multiplier
+    top: diff * 0.4
   });
 
   startY = currentY;
-  lastMove = now;
 
-  e.preventDefault();
-
-}, {passive:false});
-    </script>
+}, { passive: true });
+</script>
 <!-- 1. Подключаем библиотеку через CDN-->
 <script src="https://unpkg.com"></script>
 
