@@ -744,7 +744,7 @@
           stroke: currentColor;
           fill: currentColor;
          }
-        .logo-img,
+        
          .icon-svg {
           filter:
           drop-shadow(0 0 2px white)
@@ -752,6 +752,13 @@
           drop-shadow(0 0 2px white);
           transition: filter 0.2s ease, color 0.2s ease;
          }
+
+          .logo-img{
+           drop-shadow(0 0 8px white)
+           drop-shadow(0 0 8px white)
+           drop-shadow(0 0 8px white)
+           transition: filter 0.2s ease, color 0.2s ease;
+          }
 
           .icon-svg path,
           .icon-svg line,
@@ -774,8 +781,8 @@
 
            .logo-img {
            content: url("../img/elements/logo_black_transparent.png");
-           filter: drop-shadow(0 0 6px rgba(255,255,255,0.55));  
-           mix-blend-mode: difference;    
+           /*filter: drop-shadow(0 0 8px rgba(255,255,255,0.55));  
+           mix-blend-mode: difference;  */  
           }
           .logo{
               height: 36px;
