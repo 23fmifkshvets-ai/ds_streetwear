@@ -38,6 +38,7 @@
      background: #fff;
      color: #111;
      overscroll-behavior-y: contain; 
+     touch-action: pan-y;
     }
 
    /* body > *:first-child {
