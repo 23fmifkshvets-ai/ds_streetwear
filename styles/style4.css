@@ -241,6 +241,15 @@ a.logo-link:hover .logo-img {
   position: relative;
 }
 
+.arrow svg {
+  width: 24px;
+  height: 24px;
+  stroke: white;
+  stroke-width: 2;
+  fill: none;
+}
+
+
 .image-wrapper {
   overflow: hidden;
   border: 1px solid var(--border-color);
@@ -261,6 +270,32 @@ a.logo-link:hover .logo-img {
 
 .image-wrapper img:active {
   cursor: grabbing;
+}
+
+.image-wrapper:hover .arrow {
+  opacity: 1;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: white;
+  font-size: 22px;
+  padding: 10px 14px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
 }
 
 .expand-btn {
@@ -444,5 +479,9 @@ a.logo-link:hover .logo-img {
 
   .product-page {
     padding: 20px 10px;
+  }
+
+  .btn-buy {
+    padding: 12px 80px;
   }
 }
