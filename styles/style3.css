@@ -283,13 +283,8 @@
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
      gap: 30px;
-     scroll-snap-type: y mandatory;
-     scroll-padding-top:20px;
     }
 
-    .products-group {
-     scroll-snap-align: start;   
-    }
     .product-card {
       display: flex;
       flex-direction: column;
