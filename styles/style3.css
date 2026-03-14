@@ -840,6 +840,7 @@
   .products {
     grid-template-columns: 1fr;
     gap: 28px;
+    scroll-snap-type: y mandatory;
   }
    
     .products-group {
