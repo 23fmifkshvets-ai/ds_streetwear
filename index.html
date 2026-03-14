@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,463 +9,417 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<!-- deploy test -->
-
 </head>
+
 <body>
-<div id="top" style="scroll-snap-align: start; position: absolute; top: 0;"></div>
   <!-- HEADER -->
-<div class="header-wrapper">
- <header class="header">
-  <div class="header-left">
-    <a href="#menu" class="icon">
-      <svg class="icon-svg" viewBox="0 0 24 24">
-       <path d="M3 6h18M3 12h18M3 18h18" />
-      </svg>
-    </a>
-    
-   <div id="menu" class="menu-overlay">
+  <div class="header-wrapper">
+    <header class="header">
+      <div class="header-left">
+        <a href="#menu" class="icon">
+          <svg class="icon-svg" viewBox="0 0 24 24">
+            <path d="M3 6h18M3 12h18M3 18h18" />
+          </svg>
+        </a>
 
-   <a href="#!" class="menu-close">✕</a>
-   
-    <nav class="menu">
-     <a href="./pages/product/7.html">Link 1</a>
-     <a href="./pages/product/7.html">Link 2</a>
-     <a href="./pages/product/7.html">Link 3</a>
-     </nav>
-    </div>
+        <div id="menu" class="menu-overlay">
 
-    
-   <!--<div class="menu-item">
+          <a href="#!" class="menu-close">✕</a>
 
-     <nav class="navbar">
-      
-     <li><a href="#">Story1</a></li>
-     <li><a href="#">Story2</a></li>
-     <li><a href="#">Story3</a></li> 
-    </div> -->
-    <!--<button class="icon">
-      <svg class="icon-svg" viewBox="0 0 24 24">
-        <circle cx="11" cy="11" r="7"/>
-        <line x1="16.5" y1="16.5" x2="21" y2="21"/>
-      </svg>
-    </button>-->
+          <nav class="menu">
+            <a href="./pages/product/7.html">Home</a>
+            <a href="./pages/product/7.html">DS Forge Collection</a>
+            <a href="./pages/product/7.html">About Us</a>
+            <a href="./pages/product/7.html">Contacts</a>
+          </nav>
+        </div>
+
+        <!--svg icon circle-->
+      </div>
+
+      <div class="header-center">
+        <a href="/index3.html" class="logo-link">
+          <img src="/img/elements/logo.png" alt="DS" class="logo-img">
+        </a>
+      </div>
+
+      <div class="header-right">
+        <button class="icon">
+          <svg class="icon-svg" viewBox="0 0 24 24">
+            <path d="M6 8h12l-1.5 12h-9z" />
+            <path d="M9 8V6a3 3 0 0 1 6 0v2" />
+          </svg>
+        </button>
+        <div class="avatar"></div>
+      </div>
+    </header>
   </div>
-  
-
-  <div class="header-center">
-    <img src="img/elements/logo.png" alt="DS" class="logo-img">
-  </div>
-
-  <div class="header-right">
-    <button class="icon">
-      <svg class="icon-svg" viewBox="0 0 24 24">
-        <path d="M6 8h12l-1.5 12h-9z"/>
-        <path d="M9 8V6a3 3 0 0 1 6 0v2"/>
-      </svg>
-    </button>
-    <div class="avatar"></div>
-  </div>
- </header>
-</div>
 
 
   <section class="hero">
     <!-- ВІДЕО ЯК БЕКГРАУНД -->
-    <video
-      class="hero-video"
-      src="ds_vid_2.mp4"
-      autoplay
-      muted
-      loop
-      playsinline
-      poster="img/hero-fallback.png"
-    ></video>
-  
+    <video class="hero-video" src="ds_vid_2.mp4" autoplay muted loop playsinline poster="img/hero-fallback.png"></video>
+
     <!-- КОНТЕНТ ПОВЕРХ -->
     <div class="hero-text">
       DS Streetwear
     </div>
   </section>
-  
+
   <script>
-  if ('connection' in navigator) {
-    const conn = navigator.connection;
-    if (conn.saveData || conn.effectiveType.includes('2g')) {
-      document.querySelector('.hero-video')?.remove();
+    if ('connection' in navigator) {
+      const conn = navigator.connection;
+      if (conn.saveData || conn.effectiveType.includes('2g')) {
+        document.querySelector('.hero-video')?.remove();
+      }
     }
-  }
-</script>
+  </script>
 
 
-    <!-- HERO -->
+  <!-- HERO -->
   <!--<section class="hero">
     <div class="hero-text">
       <p>Winter 2026</p>
       <span>12:32:45</span>
     </div>
   </section>-->
-  
+
 
   <!-- PRODUCTS -->
   <section class="container">
     <div class="products">
 
-        <!-- PROD-CARD 1-->
       <article class="product-card">
         <div class="product-image">
           <a href="./pages/product/7.html" target="_blank">
-          <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
-          <button class="add-to-cart">
-            <span class="cart-icon">🛒</span>
-            <span class="cart-text">Add to cart</span>
-          </button> 
+            <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
+            <button class="add-to-cart">
+              <span class="cart-icon">🛒</span>
+              <span class="cart-text">Add to cart</span>
+            </button>
           </a>
         </div>
-      
+
         <h3>DC Goth Vein Tee</h3>
         <p class="subtitle">New collection of 2026</p>
-      
+
         <p class="price">
           <span class="old">29,90€</span>
           26,90€
         </p>
-      
-        <!--<div class="sale-badge">20% SALE</div>-->
-      </article>
-    
-      <!-- PROD-CARD 2-->
 
-        <article class="product-card">
-        <div class="product-image">
-          <a href="./pages/product/7.html" target="_blank">
-          <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
-          <button class="add-to-cart">
-            <span class="cart-icon">🛒</span>
-            <span class="cart-text">Add to cart</span>
-          </button> 
-          </a>
-        </div>
-      
-        <h3>DC Goth Vein Tee</h3>
-        <p class="subtitle">New collection of 2026</p>
-      
-        <p class="price">
-          <span class="old">29,90€</span>
-          26,90€
-        </p>
-      
         <!--<div class="sale-badge">20% SALE</div>-->
       </article>
 
-      <!-- PROD-CARD 3-->
+      <!-- PROD-CARD -->
 
       <article class="product-card">
         <div class="product-image">
           <a href="./pages/product/7.html" target="_blank">
-          <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
-          <button class="add-to-cart">
-            <span class="cart-icon">🛒</span>
-            <span class="cart-text">Add to cart</span>
-          </button> 
+            <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
+            <button class="add-to-cart">
+              <span class="cart-icon">🛒</span>
+              <span class="cart-text">Add to cart</span>
+            </button>
           </a>
         </div>
-      
+
         <h3>DC Goth Vein Tee</h3>
         <p class="subtitle">New collection of 2026</p>
-      
+
         <p class="price">
           <span class="old">29,90€</span>
           26,90€
         </p>
-      
+
         <!--<div class="sale-badge">20% SALE</div>-->
       </article>
 
-     <!-- PROD-CARD 4-->
-      
+      <!-- PROD-CARD -->
+
       <article class="product-card">
         <div class="product-image">
           <a href="./pages/product/7.html" target="_blank">
-          <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
-          <button class="add-to-cart">
-            <span class="cart-icon">🛒</span>
-            <span class="cart-text">Add to cart</span>
-          </button> 
+            <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
+            <button class="add-to-cart">
+              <span class="cart-icon">🛒</span>
+              <span class="cart-text">Add to cart</span>
+            </button>
           </a>
         </div>
-      
+
         <h3>DC Goth Vein Tee</h3>
         <p class="subtitle">New collection of 2026</p>
-      
+
         <p class="price">
           <span class="old">29,90€</span>
           26,90€
         </p>
-        <!--<div class="sale-badge">20% SALE</div>-->
-      </article>
-    
-      <!-- PROD-CARD 1-->
-    
-      <article class="product-card">
-        <div class="product-image">
-          <a href="./pages/product/7.html" target="_blank">
-          <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
-          <button class="add-to-cart">
-            <span class="cart-icon">🛒</span>
-            <span class="cart-text">Add to cart</span>
-          </button> 
-          </a>
-        </div>
-      
-        <h3>DC Goth Vein Tee</h3>
-        <p class="subtitle">New collection of 2026</p>
-      
-        <p class="price">
-          <span class="old">29,90€</span>
-          26,90€
-        </p>
-       
-        <!--<div class="sale-badge">20% SALE</div>-->
-        </article>
-       
-      <!-- PROD-CARD 2-->
-      
-      <article class="product-card">
-        <div class="product-image">
-          <a href="./pages/product/7.html" target="_blank">
-          <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
-          <button class="add-to-cart">
-            <span class="cart-icon">🛒</span>
-            <span class="cart-text">Add to cart</span>
-          </button> 
-          </a>
-        </div>
-      
-        <h3>DC Goth Vein Tee</h3>
-        <p class="subtitle">New collection of 2026</p>
-      
-        <p class="price">
-          <span class="old">29,90€</span>
-          26,90€
-        </p>
-      
-        <!--<div class="sale-badge">20% SALE</div>-->
-      </article>
-      
-      <!-- PROD-CARD 3-->
-      
-      <article class="product-card">
-        <div class="product-image">
-          <a href="./pages/product/7.html" target="_blank">
-          <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
-          <button class="add-to-cart">
-            <span class="cart-icon">🛒</span>
-            <span class="cart-text">Add to cart</span>
-          </button> 
-          </a>
-        </div>
-      
-        <h3>DC Goth Vein Tee</h3>
-        <p class="subtitle">New collection of 2026</p>
-      
-        <p class="price">
-          <span class="old">29,90€</span>
-          26,90€
-        </p>
-      
-        <!--<div class="sale-badge">20% SALE</div>-->
-      </article>
-      
-      <!-- PROD-CARD 4-->
-      
-      <article class="product-card">
-        <div class="product-image">
-          <a href="./pages/product/7.html" target="_blank">
-          <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
-          <button class="add-to-cart">
-            <span class="cart-icon">🛒</span>
-            <span class="cart-text">Add to cart</span>
-          </button> 
-          </a>
-        </div>
-      
-        <h3>DC Goth Vein Tee</h3>
-        <p class="subtitle">New collection of 2026</p>
-      
-        <p class="price">
-          <span class="old">29,90€</span>
-          26,90€
-        </p>
-        <!--<div class="sale-badge">20% SALE</div>-->
-      </article>
-     
-      <!-- PROD-CARD 1-->
-    
-      <article class="product-card">
-        <div class="product-image">
-          <a href="./pages/product/7.html" target="_blank">
-          <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
-          <button class="add-to-cart">
-            <span class="cart-icon">🛒</span>
-            <span class="cart-text">Add to cart</span>
-          </button> 
-          </a>
-        </div>
-      
-        <h3>DC Goth Vein Tee</h3>
-        <p class="subtitle">New collection of 2026</p>
-      
-        <p class="price">
-          <span class="old">29,90€</span>
-          26,90€
-        </p>  
+
         <!--<div class="sale-badge">20% SALE</div>-->
       </article>
 
-      <!-- PROD-CARD 2-->
-      
-      <article class="product-card">
-        <div class="product-image">
-          <a href="./pages/product/7.html" target="_blank">
-          <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
-          <button class="add-to-cart">
-            <span class="cart-icon">🛒</span>
-            <span class="cart-text">Add to cart</span>
-          </button> 
-          </a>
-        </div>
-      
-        <h3>DC Goth Vein Tee</h3>
-        <p class="subtitle">New collection of 2026</p>
-      
-        <p class="price">
-          <span class="old">29,90€</span>
-          26,90€
-        </p>      
-        <!--<div class="sale-badge">20% SALE</div>-->
-      </article>
-      
-      <!-- PROD-CARD 3-->
-      
-      <article class="product-card">
-        <div class="product-image">
-          <a href="./pages/product/7.html" target="_blank">
-          <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
-          <button class="add-to-cart">
-            <span class="cart-icon">🛒</span>
-            <span class="cart-text">Add to cart</span>
-          </button> 
-          </a>
-        </div>
-      
-        <h3>DC Goth Vein Tee</h3>
-        <p class="subtitle">New collection of 2026</p>
-      
-        <p class="price">
-          <span class="old">29,90€</span>
-          26,90€
-        </p>      
-        <!--<div class="sale-badge">20% SALE</div>-->
-      </article>
+      <!-- PROD-CARD -->
 
-      <!-- PROD-CARD 4-->
-      
       <article class="product-card">
         <div class="product-image">
           <a href="./pages/product/7.html" target="_blank">
-          <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
-          <button class="add-to-cart">
-            <span class="cart-icon">🛒</span>
-            <span class="cart-text">Add to cart</span>
-          </button> 
+            <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
+            <button class="add-to-cart">
+              <span class="cart-icon">🛒</span>
+              <span class="cart-text">Add to cart</span>
+            </button>
           </a>
         </div>
-      
-        <h3>DC Goth Vein Tee</h3>
-        <p class="subtitle">New collection of 2026</p>
-      
-        <p class="price">
-          <span class="old">29,90€</span>
-          26,90€
-        </p>     
-        <!--<div class="sale-badge">20% SALE</div>-->
-      </article>
-    
 
-      <!-- PROD-CARD 1-->
-    
-      <article class="product-card">
-        <div class="product-image">
-          <a href="./pages/product/7.html" target="_blank">
-          <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
-          <button class="add-to-cart">
-            <span class="cart-icon">🛒</span>
-            <span class="cart-text">Add to cart</span>
-          </button> 
-          </a>
-        </div>
-      
         <h3>DC Goth Vein Tee</h3>
         <p class="subtitle">New collection of 2026</p>
-      
+
         <p class="price">
           <span class="old">29,90€</span>
           26,90€
         </p>
-      
-       <!--<div class="sale-badge">20% SALE</div>-->
+
+        <!--<div class="sale-badge">20% SALE</div>-->
       </article>
-      
-      <!-- PROD-CARD 2-->
-     
+
+      <!-- PROD-CARD -->
+
       <article class="product-card">
         <div class="product-image">
           <a href="./pages/product/7.html" target="_blank">
-          <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
-          <button class="add-to-cart">
-            <span class="cart-icon">🛒</span>
-            <span class="cart-text">Add to cart</span>
-          </button> 
+            <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
+            <button class="add-to-cart">
+              <span class="cart-icon">🛒</span>
+              <span class="cart-text">Add to cart</span>
+            </button>
           </a>
         </div>
-      
+
         <h3>DC Goth Vein Tee</h3>
         <p class="subtitle">New collection of 2026</p>
-      
+
         <p class="price">
           <span class="old">29,90€</span>
           26,90€
-        </p>     
+        </p>
+
         <!--<div class="sale-badge">20% SALE</div>-->
-      </article>    
+      </article>
+
+      <!-- PROD-CARD -->
+
+      <article class="product-card">
+        <div class="product-image">
+          <a href="./pages/product/7.html" target="_blank">
+            <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
+            <button class="add-to-cart">
+              <span class="cart-icon">🛒</span>
+              <span class="cart-text">Add to cart</span>
+            </button>
+          </a>
+        </div>
+
+        <h3>DC Goth Vein Tee</h3>
+        <p class="subtitle">New collection of 2026</p>
+
+        <p class="price">
+          <span class="old">29,90€</span>
+          26,90€
+        </p>
+
+        <!--<div class="sale-badge">20% SALE</div>-->
+      </article>
+
+      <!-- PROD-CARD -->
+
+      <article class="product-card">
+        <div class="product-image">
+          <a href="./pages/product/7.html" target="_blank">
+            <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
+            <button class="add-to-cart">
+              <span class="cart-icon">🛒</span>
+              <span class="cart-text">Add to cart</span>
+            </button>
+          </a>
+        </div>
+
+        <h3>DC Goth Vein Tee</h3>
+        <p class="subtitle">New collection of 2026</p>
+
+        <p class="price">
+          <span class="old">29,90€</span>
+          26,90€
+        </p>
+
+        <!--<div class="sale-badge">20% SALE</div>-->
+      </article>
+
+      <!-- PROD-CARD -->
+
+      <article class="product-card">
+        <div class="product-image">
+          <a href="/pages/product/7.html" target="_blank">
+            <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
+            <button class="add-to-cart">
+              <span class="cart-icon">🛒</span>
+              <span class="cart-text">Add to cart</span>
+            </button>
+          </a>
+        </div>
+
+        <h3>DC Goth Vein Tee</h3>
+        <p class="subtitle">New collection of 2026</p>
+
+        <p class="price">
+          <span class="old">29,90€</span>
+          26,90€
+        </p>
+
+        <!--<div class="sale-badge">20% SALE</div>-->
+      </article>
+
+      <!-- PROD-CARD -->
+
+      <article class="product-card">
+        <div class="product-image">
+          <a href="/pages/product/7.html" target="_blank">
+            <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
+            <button class="add-to-cart">
+              <span class="cart-icon">🛒</span>
+              <span class="cart-text">Add to cart</span>
+            </button>
+          </a>
+        </div>
+
+        <h3>DC Goth Vein Tee</h3>
+        <p class="subtitle">New collection of 2026</p>
+
+        <p class="price">
+          <span class="old">29,90€</span>
+          26,90€
+        </p>
+
+        <!--<div class="sale-badge">20% SALE</div>-->
+      </article>
+
+      <!-- PROD-CARD -->
+
+      <article class="product-card">
+        <div class="product-image">
+          <a href="/pages/product/7.html" target="_blank">
+            <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
+            <button class="add-to-cart">
+              <span class="cart-icon">🛒</span>
+              <span class="cart-text">Add to cart</span>
+            </button>
+          </a>
+        </div>
+
+        <h3>DC Goth Vein Tee</h3>
+        <p class="subtitle">New collection of 2026</p>
+
+        <p class="price">
+          <span class="old">29,90€</span>
+          26,90€
+        </p>
+
+        <!--<div class="sale-badge">20% SALE</div>-->
+      </article>
+
+      <!-- PROD-CARD -->
+
+      <article class="product-card">
+        <div class="product-image">
+          <a href="/pages/product/7.html" target="_blank">
+            <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
+            <button class="add-to-cart">
+              <span class="cart-icon">🛒</span>
+              <span class="cart-text">Add to cart</span>
+            </button>
+          </a>
+        </div>
+
+        <h3>DC Goth Vein Tee</h3>
+        <p class="subtitle">New collection of 2026</p>
+
+        <p class="price">
+          <span class="old">29,90€</span>
+          26,90€
+        </p>
+
+        <!--<div class="sale-badge">20% SALE</div>-->
+      </article>
+
+      <!-- PROD-CARD -->
+
+      <article class="product-card">
+        <div class="product-image">
+          <a href="/pages/product/7.html" target="_blank">
+            <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
+            <button class="add-to-cart">
+              <span class="cart-icon">🛒</span>
+              <span class="cart-text">Add to cart</span>
+            </button>
+          </a>
+        </div>
+
+        <h3>DC Goth Vein Tee</h3>
+        <p class="subtitle">New collection of 2026</p>
+
+        <p class="price">
+          <span class="old">29,90€</span>
+          26,90€
+        </p>
+
+        <!--<div class="sale-badge">20% SALE</div>-->
+      </article>
+
+      <!-- PROD-CARD -->
+
+      <article class="product-card">
+        <div class="product-image">
+          <a href="/pages/product/7.html" target="_blank">
+            <img src="./img/t-shirt/DC Goth Vein Tee.png" alt="T-shirt">
+            <button class="add-to-cart">
+              <span class="cart-icon">🛒</span>
+              <span class="cart-text">Add to cart</span>
+            </button>
+          </a>
+        </div>
+
+        <h3>DC Goth Vein Tee</h3>
+        <p class="subtitle">New collection of 2026</p>
+
+        <p class="price">
+          <span class="old">29,90€</span>
+          26,90€
+        </p>
+
+        <!--<div class="sale-badge">20% SALE</div>-->
+      </article>
+
+
+
+    </div>
   </section>
 
   <!-- STORY SECTIONS -->
   <section class="stories">
-   
+
     <section id="story1" class="story story-1">
       <div class="story-content">
         <div class="story-label">What's new?</div>
         <button class="story-btn">
           Order
-          <svg
-            class="arrow-ios"
-            width="18"
-            height="18"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true">
-            <path
-              d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z"
-              fill="currentColor"
-            />
+          <svg class="arrow-ios" width="18" height="18" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z" fill="currentColor" />
           </svg>
         </button>
       </div>
     </section>
-  
+
     <section id="story2" class="story story-2">
       <div class="story-products">
         <img src="./img/elements/st2.2.png" alt="T-shirts">
@@ -473,90 +428,69 @@
         <div class="story-label">DS Forge Collection</div>
         <button class="story-btn">
           Order
-          <svg
-            class="arrow-ios"
-            width="18"
-            height="18"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true">
-            <path
-              d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z"
-              fill="currentColor"
-            />
+          <svg class="arrow-ios" width="18" height="18" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z" fill="currentColor" />
           </svg>
         </button>
-        
+
       </div>
     </section>
-    
+
     <section id="story3" class="story story-3">
       <div class="story-content">
         <div class="story-label">DS Forge Collection</div>
         <button class="story-btn">
           Order
-          <svg
-            class="arrow-ios"
-            width="18"
-            height="18"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true">
-            <path
-              d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z"
-              fill="currentColor"
-            />
+          <svg class="arrow-ios" width="18" height="18" viewBox="0 0 24 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z" fill="currentColor" />
           </svg>
         </button>
       </div>
     </section>
-  
+
   </section>
 
 
   <div class="story-gap"></div>
-  
- <!-- FOOTER-->
- <footer class="footer">
-  <div class="footer-inner">
 
-    <div class="footer-lang">
-      <img src="./img/elements/flag-uk.svg" alt="En" class="lang-flag">
-      <span class="lang-text">Language</span>
+  <!-- FOOTER-->
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <div class="footer-lang">
+        <img src="./img/elements/flag-uk.svg" alt="En" class="lang-flag">
+        <span class="lang-text">Language</span>
+      </div>
+
+      <div class="footer-support">
+        <span>Support:</span>
+        <a href="mailto:ds.streetweat2025@gmail.com">ds.streetweat2025@gmail.com</a>
+        <span>or</span>
+        <a href="tel:+491746739708">+491746739708</a>
+      </div>
+
+      <div class="footer-copy">
+        © DS Streetwear 2025
+      </div>
+
     </div>
+  </footer>
+  <script>
+    let scrollTimeout;
 
-    <div class="footer-support">
-      <span>Support:</span>
-      <a href="mailto:ds.streetweat2025@gmail.com">ds.streetweat2025@gmail.com</a>
-      <span>or</span>
-      <a href="tel:+491746739708">+491746739708</a>
-    </div>
+    window.addEventListener("scroll", () => {
+      clearTimeout(scrollTimeout);
 
-    <div class="footer-copy">
-      © DS Streetwear 2025
-    </div>
-
-  </div>
-</footer>
-
-
-<script src="https://unpkg.com"></script>
-
-<script>
-  const lenis = new Lenis({
-    lerp: 0.02, 
-    wheelMultiplier: 0.4, 
-    syncTouch: true,
-  })
-  function raf(time) {
-    lenis.raf(time)
-    requestAnimationFrame(raf)
-  }
-  requestAnimationFrame(raf)
-</script>
-  
+      scrollTimeout = setTimeout(() => {
+        window.scrollTo({
+          top: window.scrollY,
+          behavior: "smooth"
+        });
+      }, 70);
+    });
+  </script>
 </body>
 
 </html>
@@ -564,4 +498,17 @@
 
 
 
+<!--<div class="menu-item">
 
+     <nav class="navbar">
+      
+     <li><a href="#">Story1</a></li>
+     <li><a href="#">Story2</a></li>
+     <li><a href="#">Story3</a></li> 
+    </div> -->
+<!--<button class="icon">
+      <svg class="icon-svg" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="7"/>
+        <line x1="16.5" y1="16.5" x2="21" y2="21"/>
+      </svg>
+    </button>-->
