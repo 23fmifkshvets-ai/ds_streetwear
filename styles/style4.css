@@ -480,6 +480,9 @@ a.logo-link:hover .logo-img {
   .product-page {
     padding: 20px 10px;
   }
+  .size-btn {
+   padding: 10px 13px;
+  }
 
   .btn-buy {
     padding: 12px 60px;
