@@ -525,10 +525,40 @@
 
   </div>
 </footer>
-<!-- 1. Подключаем библиотеку через CDN -->
+  <script>
+let startY = 0;
+let lastMove = 0;
+
+window.addEventListener("touchstart", e => {
+  startY = e.touches[0].clientY;
+  lastMove = Date.now();
+}, {passive:true});
+
+window.addEventListener("touchmove", e => {
+
+  let now = Date.now();
+  let speed = now - lastMove;
+
+  let currentY = e.touches[0].clientY;
+  let diff = startY - currentY;
+
+  let multiplier = speed < 30 ? 0.25 : 0.6;
+
+  window.scrollBy({
+    top: diff * multiplier
+  });
+
+  startY = currentY;
+  lastMove = now;
+
+  e.preventDefault();
+
+}, {passive:false});
+    </script>
+<!-- 1. Подключаем библиотеку через CDN-->
 <script src="https://unpkg.com"></script>
 
-<!-- 2. Настраиваем замедление -->
+<!-- 2. Настраиваем замедление 
 <script>
   const lenis = new Lenis({
     lerp: 0.05, // Чем МЕНЬШЕ число, тем МЕДЛЕННЕЕ и плавнее скролл (попробуй 0.02)
@@ -542,7 +572,7 @@
     requestAnimationFrame(raf)
   }
   requestAnimationFrame(raf)
-</script>
+</script>-->
   
 </body>
 
