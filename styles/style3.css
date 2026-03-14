@@ -282,16 +282,11 @@
     .products {
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-     gap: 10px;
+     gap: 30px;
     }
 
     .products-group {
-     display: grid;
-     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-     gap: 30px;
-     padding: 0;
-     scroll-snap-align: start;
-     display: contents;
+     scroll-snap-align: start;   
     }
     .product-card {
       display: flex;
