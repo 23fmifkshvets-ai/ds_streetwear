@@ -525,35 +525,15 @@
 
   </div>
 </footer>
-<script>
-let startY = 0;
 
-window.addEventListener("touchstart", e => {
-  startY = e.touches[0].clientY;
-}, { passive: true });
 
-window.addEventListener("touchmove", e => {
-
-  let currentY = e.touches[0].clientY;
-  let diff = startY - currentY;
-
-  window.scrollBy({
-    top: diff * 0.4
-  });
-
-  startY = currentY;
-
-}, { passive: true });
-</script>
-<!-- 1. Подключаем библиотеку через CDN-->
 <script src="https://unpkg.com"></script>
 
-<!-- 2. Настраиваем замедление 
 <script>
   const lenis = new Lenis({
-    lerp: 0.05, // Чем МЕНЬШЕ число, тем МЕДЛЕННЕЕ и плавнее скролл (попробуй 0.02)
-    wheelMultiplier: 0.7, // Снижаем общую скорость
-    syncTouch: true, // ОБЯЗАТЕЛЬНО для работы замедления на смартфонах
+    lerp: 0.02, 
+    wheelMultiplier: 0.4, 
+    syncTouch: true,
   })
 
   // Запускаем цикл анимации
