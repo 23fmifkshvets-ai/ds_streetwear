@@ -284,7 +284,10 @@
      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
      gap: 40px;
     }
-  
+
+    .products-group {
+      scroll-snap-align: start;
+    }
     .product-card {
       display: flex;
       flex-direction: column;
@@ -802,10 +805,10 @@
      --header-height: 60px;
    }
 
-  /* ===== HEADER ===== */ 
-  .header {
+     /* ===== HEADER ===== */ 
+   .header {
     height: var(--header-height);
-  }
+    }
 
   .header-left,
   .header-right { 
@@ -833,7 +836,12 @@
     grid-template-columns: 1fr;
     gap: 28px;
   }
-
+   
+    .products-group {
+     scroll-snap-align: start;
+   }
+    
+  .products-
   .product-card h3 {
     font-size: 12px;
   }
