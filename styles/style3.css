@@ -187,7 +187,7 @@ body {
 }
 
 .logo-img {
-  height: 59px;
+  height: 40px;
   display: block;
   filter: brightness(1);
   transition: filter 0.3s ease;
@@ -833,7 +833,7 @@ a.logo-link:hover .logo-img {
     gap: 14px;
   }
   .logo-img {
-     height: 56px;
+     height: 38px;
   }
   /* ===== HERO 767===== */
 
