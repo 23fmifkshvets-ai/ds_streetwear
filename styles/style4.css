@@ -516,6 +516,18 @@ a.logo-link:hover .logo-img {
 }
 
 @media (max-width: 900px) {
+  :root {
+    --header-height: 60px;
+
+  header-left,
+  .header-right {
+    padding: 0 12px;
+    gap: 14px;
+  }
+  .logo-img {
+     height: 56px;
+  } 
+    
   .product-container {
     display: grid;
     grid-template-columns: 1fr;
