@@ -14,7 +14,7 @@ const images = [
     "../../img/gvt/gvt-1.jpg",
     "../../img/gvt/gvt-2.jpg",
     "../../img/gvt/gvt-3.jpg",
-    "../../img/gvt/gvt-4.jpg"
+    "../../img/gvt/gvt-4.jpg",
     "../../img/gvt/gvt-5.jpg"
 ];
 
