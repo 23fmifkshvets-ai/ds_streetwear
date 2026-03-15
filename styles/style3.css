@@ -800,12 +800,9 @@ a.logo-link:hover .logo-img {
   }
 
   .logo-img {
-    content: url("../img/elements/logo_black_transparent.png");
+    content: url("../img/elements/logo_black.sbg");
     filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.75));
     mix-blend-mode: difference;
-  }
-
-  .logo {
     height: 36px;
   }
 
