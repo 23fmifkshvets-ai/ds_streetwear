@@ -7,10 +7,13 @@ setTimeout(() => {
 }, 2500)
 
 
+
 const paragraphs = document.querySelectorAll(".about-text p");
+
+const delay = window.innerWidth <= 768 ? 200 : 2200;
 
 paragraphs.forEach((p, i) => {
     setTimeout(() => {
         p.classList.add("show");
-    }, 2200 + i * 350);
+    }, delay + i * 350);
 });
