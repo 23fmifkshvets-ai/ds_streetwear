@@ -501,7 +501,7 @@ a.logo-link:hover .logo-img {
   }
 
   .logo-img {
-    content: url("../img/elements/logo_black.svg");
+    content: url("../img/elements/logo_black.png");
     filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.55));
     mix-blend-mode: difference;
   }
