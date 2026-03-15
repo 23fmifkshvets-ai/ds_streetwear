@@ -187,10 +187,11 @@ background:white;
 color:black;
  }
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and
+(orientation: landskape){
 
     .about {
-        padding: 60px 20px;
+        padding: 40px 20px;
     }
 
     .about-text {
