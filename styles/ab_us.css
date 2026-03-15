@@ -188,7 +188,7 @@ color:black;
  }
 }
 @media (max-width: 768px) and
-(orientation: landskape){
+(orientation: landscape){
 
     .about {
         padding: 40px 20px;
