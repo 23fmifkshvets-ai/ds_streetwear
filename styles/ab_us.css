@@ -173,7 +173,17 @@ body {
     opacity: 0.06;
     pointer-events: none;
 }
+@media (max-width: 900px){
 
+.intro{
+display:none;
+}
+
+body{
+background:white;
+color:black;
+ }
+}
 @media (max-width: 768px) {
 
     .about {
