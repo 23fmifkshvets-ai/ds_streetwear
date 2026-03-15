@@ -131,8 +131,7 @@ body {
     padding:20px;
 
     border:1px solid black;
-    
-
+    text-align: justify;
     opacity: 0;
     transform: translateY(40px);
 
