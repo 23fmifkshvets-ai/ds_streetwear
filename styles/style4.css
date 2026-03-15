@@ -189,7 +189,7 @@ button {
 }
 
 .logo-img {
-  height: 63px;
+  height: 59px;
   display: block;
   filter: brightness(1);
   transition: filter 0.3s ease;
@@ -198,7 +198,7 @@ button {
 a.logo-link:hover .logo-img {
   /*transform: scale(1.1);*/
   filter: brightness(0.5);
-}
+ }
 
 .logo-text {
   font-weight: bold;
