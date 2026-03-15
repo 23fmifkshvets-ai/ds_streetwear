@@ -501,7 +501,7 @@ a.logo-link:hover .logo-img {
   }
 
   .logo-img {
-    content: url("../img/elements/logo-black.svg");
+    content: url("../img/elements/logo_black.svg");
     filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.55));
     mix-blend-mode: difference;
   }
@@ -520,15 +520,17 @@ a.logo-link:hover .logo-img {
   :root {
     --header-height: 60px;
   }
+
   header-left,
   .header-right {
     padding: 0 12px;
     gap: 14px;
   }
+
   .logo-img {
-     height: 38px;
-  } 
-    
+    height: 38px;
+  }
+
   .product-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -552,8 +554,9 @@ a.logo-link:hover .logo-img {
   .product-page {
     padding: 20px 10px;
   }
+
   .size-btn {
-   padding: 10px 13px;
+    padding: 10px 13px;
   }
 
   .btn-buy {
