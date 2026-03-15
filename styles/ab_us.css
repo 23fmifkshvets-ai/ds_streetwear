@@ -128,6 +128,10 @@ body {
     margin: auto;
     line-height: 1.8;
     letter-spacing: 0.02em;
+    padding:20px;
+
+    border:1px solid black;
+    
 
     opacity: 0;
     transform: translateY(40px);
