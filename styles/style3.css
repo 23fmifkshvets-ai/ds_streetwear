@@ -800,7 +800,7 @@ a.logo-link:hover .logo-img {
   }
 
   .logo-img {
-    content: url("/img/elements/logo-black.svg");
+    content: url("../img/elements/logo-black.svg");
     filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.75));
     mix-blend-mode: difference;
     height: 36px;
