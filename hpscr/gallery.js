@@ -1,3 +1,13 @@
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".logo-link").forEach(link => {
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
+    });
+  });
+});
+
+
+
 const images = [
     "../../img/gvt/gvt-fw.jpg",
     "../../img/gvt/gvt-bk.jpg",
