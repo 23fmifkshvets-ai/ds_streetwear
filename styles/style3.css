@@ -833,6 +833,8 @@ a.logo-link:hover .logo-img {
     padding: 0 12px;
     gap: 14px;
   }
+  .logo {
+     height: 44px;
 
   /* ===== HERO 767===== */
 
