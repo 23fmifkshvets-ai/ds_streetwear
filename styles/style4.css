@@ -456,6 +456,65 @@ a.logo-link:hover .logo-img {
   font-size: 16px; 
 }*/
 
+@media (orientation: landscape) and (max-height: 500px) {
+
+  .header-wrapper,
+  .header {
+    border-bottom: 1px solid transparent;
+    background-color: transparent;
+  }
+
+  .icon {
+    color: black;
+  }
+
+  .icon-svg path {
+    stroke: currentColor;
+    fill: currentColor;
+  }
+
+  .logo-img,
+  .icon-svg {
+    filter:
+      drop-shadow(0 0 2px white) drop-shadow(0 0 2px white) drop-shadow(0 0 2px white);
+    transition: filter 0.2s ease, color 0.2s ease;
+  }
+
+  .icon-svg path,
+  .icon-svg line,
+  .icon-svg circle {
+    stroke: currentColor;
+    fill: currentColor;
+  }
+
+  .icon:hover,
+  .icon:focus,
+  .icon:active {
+    color: white;
+  }
+
+  .icon:hover .icon-svg,
+  .icon:focus .icon-svg,
+  .icon:active .icon-svg {
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.9));
+  }
+
+  .logo-img {
+    content: url("../img/elements/logo_black_transparent.png");
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.55));
+    mix-blend-mode: difference;
+  }
+
+  .logo {
+    height: 36px;
+  }
+
+  .hero,
+  .hero-video {
+    display: none;
+  }
+}
+
 @media (max-width: 900px) {
   .product-container {
     display: grid;
