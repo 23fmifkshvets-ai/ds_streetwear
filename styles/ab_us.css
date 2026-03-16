@@ -225,6 +225,7 @@ body {
     }
 
     .about-home {
+        top: -12px;
         font-size: 18px;
     }
 
