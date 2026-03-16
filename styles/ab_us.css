@@ -139,6 +139,8 @@ body {
     animation: textReveal 1.6s ease forwards;
     animation-delay: 2.2s;
     hyphens: auto;
+
+
 }
 
 .about-text p {
@@ -186,13 +188,30 @@ body {
 
 }
 
-.bg-logo {
+/*.bg-logo {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 1000px;
     opacity: 0.06;
+    pointer-events: none;
+}*/
+.bg-logo {
+    position: fixed;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 800px;
+    /* підбери під дизайн */
+    max-width: 80vw;
+
+    opacity: .06;
+
+    z-index: 0;
     pointer-events: none;
 }
 
@@ -225,18 +244,18 @@ body {
     }
 
     .about-home {
-        top: -12px;
         font-size: 18px;
+        letter-spacing: 0.2em;
     }
 
     .logo {
         width: 140px;
     }
 
-    .bg-logo {
-        width: 500px;
+    /* .bg-logo {
+        width: 120vw;
         opacity: 0.05;
-    }
+    }*/
 
 }
 
@@ -252,11 +271,12 @@ body {
 
     .about-home {
         font-size: 16px;
+        letter-spacing: 0.2em;
     }
 
-    .bg-logo {
+    /* .bg-logo {
         width: 350px;
         opacity: 0.04;
-    }
+    }*/
 
 }
