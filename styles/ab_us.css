@@ -224,6 +224,11 @@ body {
         margin-bottom: 30px;
     }
 
+    .about-home {
+        font-size: 18px;
+        letter-spacing: 0.8em;
+    }
+
     .logo {
         width: 140px;
     }
@@ -243,6 +248,11 @@ body {
 
     .about-text h1 {
         font-size: 24px;
+    }
+
+    .about-home {
+        font-size: 16px;
+        letter-spacing: 0.6em;
     }
 
     .bg-logo {
