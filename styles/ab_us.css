@@ -114,12 +114,12 @@ body {
 
 .about {
     min-height: 100vh;
-    padding: 20px 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     background: white;
+    padding: 45px 15px;
 }
 
 .about-text {
@@ -131,13 +131,14 @@ body {
     letter-spacing: 0.02em;
     padding: 15px;
 
-    border:1px solid black;
+    border: 1px solid black;
     text-align: justify;
     opacity: 0;
     transform: translateY(40px);
 
     animation: textReveal 1.6s ease forwards;
     animation-delay: 2.2s;
+    hyphens: auto;
 }
 
 .about-text p {
@@ -152,6 +153,23 @@ body {
 .about-text p.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+.about-home {
+    position: absolute;
+
+    top: -20px;
+    left: 36px;
+
+    padding: 0 8px;
+
+    background: white;
+
+    text-decoration: none;
+    color: black;
+
+    font-size: 24px;
+    letter-spacing: 0.12em;
 }
 
 @keyframes textReveal {
@@ -177,18 +195,20 @@ body {
     opacity: 0.06;
     pointer-events: none;
 }
-@media (max-width: 900px){
 
-.intro{
-display:none;
+@media (max-width: 900px) {
+
+    .intro {
+        display: none;
+    }
+
+    body {
+        background: white;
+        color: black;
+    }
 }
 
-body{
-background:white;
-color:black;
- }
-}
-@media (max-width: 768px){
+@media (max-width: 768px) {
     .about {
         padding: 40px 20px;
     }
