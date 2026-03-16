@@ -93,7 +93,7 @@ body {
     }
 
     100% {
-        width: 1000px;
+        width: 400px;
         opacity: 0.05;
         filter: invert(1);
     }
@@ -205,8 +205,7 @@ body {
 
     transform: translate(-50%, -50%);
 
-    width: 800px;
-    /* підбери під дизайн */
+    width: 400px;
     max-width: 80vw;
 
     opacity: .06;
@@ -253,10 +252,10 @@ body {
         width: 140px;
     }
 
-    /* .bg-logo {
-        width: 120vw;
+    .bg-logo {
+        width: 70vw;
         opacity: 0.05;
-    }*/
+    }
 
 }
 
@@ -276,9 +275,9 @@ body {
         letter-spacing: 0.2em;
     }
 
-    /* .bg-logo {
-        width: 350px;
-        opacity: 0.04;
-    }*/
+     .bg-logo {
+        width: 70vw;
+        opacity: 0.05;
+    }
 
 }
