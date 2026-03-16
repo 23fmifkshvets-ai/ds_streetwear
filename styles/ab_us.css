@@ -245,6 +245,7 @@ body {
 
     .about-home {
         font-size: 18px;
+        top: -15px;
         letter-spacing: 0.2em;
     }
 
@@ -271,6 +272,7 @@ body {
 
     .about-home {
         font-size: 16px;
+        top: -15px;
         letter-spacing: 0.2em;
     }
 
