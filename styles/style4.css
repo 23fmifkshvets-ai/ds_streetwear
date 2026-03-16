@@ -547,7 +547,7 @@ a.logo-link:hover .logo-img {
     --header-height: 60px;
   }
 
-  header-left,
+  .header-left,
   .header-right {
     padding: 0 12px;
     gap: 14px;
