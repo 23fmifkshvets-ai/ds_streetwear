@@ -225,8 +225,7 @@ a.logo-link:hover .logo-img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  /* display: flex;
-  align-items: stretch;*/
+  padding: 30px;
 }
 
 .product-gallery,
@@ -317,13 +316,6 @@ a.logo-link:hover .logo-img {
 }
 
 /* Інформація */
-.product-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  align-items: stretch;
-  padding: 30px;
-}
 
 .product-gallery,
 .product-info {
@@ -360,13 +352,47 @@ a.logo-link:hover .logo-img {
   padding-left: 15px;
 }
 
+/*---- anime---*/
 .product-btn_container {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 
+  opacity: 0;
+  transform: translateY(30px);
+  animation: productReveal .9s ease forwards;
+  animation-delay: .4s;
+
 }
+
+@keyframes productReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.product-gallery {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: productReveal .9s ease forwards;
+}
+
+.product-info {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: productReveal .9s ease forwards;
+  animation-delay: .2s;
+}
+
+.product-gallery,
+.product-info,
+.product-btn_container {
+  will-change: transform, opacity;
+}
+
+/*---- anime---*/
 
 .product-btn {
   display: flex;
