@@ -642,13 +642,6 @@ a.logo-link:hover .logo-img {
     flex-direction: column;
     align-items: stretch;
   }
-   .size-selector {
-    overflow: hidden;
-   }
-  .color-selector,
-  .size-selector {
-    width: 100%;
-  }
 
   .color-selector {
     min-height: 40px;
@@ -664,14 +657,6 @@ a.logo-link:hover .logo-img {
   flex: 1;
 }
 
-.size-selector,
-.color-selector {
-  overflow: hidden;
-}
-
-* {
-  box-sizing: border-box;
-}
 
   .btn-buy {
     padding: 12px 60px;
