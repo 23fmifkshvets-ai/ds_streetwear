@@ -653,16 +653,25 @@ a.logo-link:hover .logo-img {
   .color-selector {
     min-height: 40px;
   }
-   .color-btn {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.color-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-  .size-btn {
-    flex:1;
-    padding: 10px 13px;
-  }
+
+.size-btn {
+  flex: 1;
+}
+
+.size-selector,
+.color-selector {
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
 
   .btn-buy {
     padding: 12px 60px;
