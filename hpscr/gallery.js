@@ -43,12 +43,26 @@ function prevImage() {
 
 
 
-
+// COLOR
+document.querySelectorAll('.color-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        document.querySelectorAll('.color-btn').forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+    });
+});
+// SIZE
 document.querySelectorAll('.size-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        document.querySelectorAll('.size-btn').forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+    });
+});
+
+/*document.querySelectorAll('.size-btn').forEach(button => {
     button.addEventListener('click', () => {
         // Прибираємо активний клас у всіх
         document.querySelectorAll('.size-btn').forEach(btn => btn.classList.remove('active'));
         // Додаємо поточному
         button.classList.add('active');
     });
-});
+});*/
