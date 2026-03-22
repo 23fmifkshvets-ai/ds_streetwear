@@ -640,7 +640,7 @@ a.logo-link:hover .logo-img {
   }
   .product-controls {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
   }
   
 . color-options {
