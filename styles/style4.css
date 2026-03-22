@@ -628,6 +628,7 @@ a.logo-link:hover .logo-img {
 
   .product-gallery img {
     max-width: 100%;
+    
     height: auto;
     max-height: 500px;
   }
@@ -635,7 +636,14 @@ a.logo-link:hover .logo-img {
   .product-page {
     padding: 20px 10px;
   }
+  .color-selector,
+  .size-selector {
+    display: flex;
+  }
 
+  .color-btn {
+    flex: 1;
+  }
   .size-btn {
     padding: 10px 13px;
   }
