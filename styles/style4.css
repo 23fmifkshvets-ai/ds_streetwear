@@ -642,7 +642,9 @@ a.logo-link:hover .logo-img {
     flex-direction: column;
     align-items: stretch;
   }
-
+   .size-selector {
+    overflow: hidden;
+   }
   .color-selector,
   .size-selector {
     width: 100%;
@@ -651,11 +653,14 @@ a.logo-link:hover .logo-img {
   .color-selector {
     min-height: 40px;
   }
-
-  .color-btn {
+   .color-btn {
     flex: 1;
-  }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
   .size-btn {
+    flex:1;
     padding: 10px 13px;
   }
 
