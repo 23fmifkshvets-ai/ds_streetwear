@@ -641,6 +641,7 @@ a.logo-link:hover .logo-img {
   .color-selector,
   .size-selector {
     display: flex;
+    width:100%;
   }
 
   .color-btn {
