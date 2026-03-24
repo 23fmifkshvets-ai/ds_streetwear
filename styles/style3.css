@@ -319,6 +319,7 @@ a.logo-link:hover .logo-img {
   margin-bottom: 10px;
   position: relative;
   z-index: 0;
+  object-position: center 20%
   /*transition: transform 0.35s ease, filter 0.35s ease;*/
 }
 
