@@ -337,7 +337,7 @@ a.logo-link:hover .logo-img {
 
 .product-image {
   width: 100%;
-  aspect-ratio: auto;
+  aspect-ratio: 3/4;
   display: flex;
   align-items: center;
   justify-content: center;
