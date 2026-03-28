@@ -9,8 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 const images = [
-    "../../img/out/out_fw.jpg",
-    "../../img/out/out_bk.jpg"
+    "../../img/out/out_bk.jpg",
+    "../../img/out/out_fw.jpg"
 ];
 
 let currentImage = 0;
