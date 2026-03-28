@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 const images = [
     "../../img/clwn/white_cl_bk.jpg",
-    "../../img/ct-wb/black_cl_f.jpg",
-    "../../img/ct-wb/black_cl_b.jpg",
-    "../../img/ct-wb/black_cl_f2.jpg"
+    "../../img/clwn/black_cl_f.jpg",
+    "../../img/clwn/black_cl_b.jpg",
+    "../../img/clwn/black_cl_f2.jpg"
 ];
 
 let currentImage = 0;
