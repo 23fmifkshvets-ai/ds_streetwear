@@ -634,7 +634,7 @@ a.logo-link:hover .logo-img {
     padding: 10px 13px;
   }
   .btn-buy {
-    padding: 12px 60px;
+    padding: 12px 80px;
   }
 }
 
@@ -650,13 +650,10 @@ a.logo-link:hover .logo-img {
     transform: scale(1.1);
   }
   .btn-buy {
-    padding: 10px 30px;
+    padding: 10px 60px;
+     font-size: 14px;
   }
   .color-btn {
     padding: 11px 6px;
-  }
-
-  .btn-buy {
-    font-size: 14px;
   }
 }
