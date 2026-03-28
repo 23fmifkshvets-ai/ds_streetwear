@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/style4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>BORN FROM CHAOS Tee </title>
+</head>
+
+<body>
+    <div class="header-wrapper">
+        <header class="header">
+            <div class="header-left">
+                <a href="#menu" class="icon">
+                    <svg class="icon-svg" viewBox="0 0 24 24">
+                        <path d="M3 6h18M3 12h18M3 18h18" />
+                    </svg>
+                </a>
+
+                <div id="menu" class="menu-overlay">
+
+                    <a href="#!" class="menu-close">✕</a>
+
+                    <nav class="menu">
+                        <a href="../../index.html">Home</a>
+                        <a href="#">DS Forge Collection</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Contacts</a>
+                    </nav>
+                </div>
+
+                <!--svg icon circle-->
+            </div>
+
+            <div class="header-center">
+                <a href="../../index.html" class="logo-link">
+                    <img src="../../img/elements/logo.svg" alt="DS" class="logo-img">
+                </a>
+            </div>
+
+            <div class="header-right">
+                <button class="icon">
+                    <svg class="icon-svg" viewBox="0 0 24 24">
+                        <path d="M6 8h12l-1.5 12h-9z" />
+                        <path d="M9 8V6a3 3 0 0 1 6 0v2" />
+                    </svg>
+                </button>
+                <div class="avatar"></div>
+            </div>
+        </header>
+    </div>
+
+    <main class="product-page">
+        <div class="product-container">
+
+            <div class="product-gallery">
+                <div class="image-wrapper">
+                    <button class="arrow left" onclick="prevImage()">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                    </button>
+                    <img id="product-image" src="../../img/clwn/white_cl_f.jpg" alt="DC Core Tee">
+                    <button class="arrow right" onclick="nextImage()">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M9 6l6 6-6 6" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h1 class="product-title"></h1>
+
+                <div class="product-description">
+                    <h2 class="desc-heading">BORN FROM CHAOS Tee </h2>
+                    <p>
+                        The BORN FROM CHAOS Tee features a clean front with the DS demon mark, paired with a bold back
+                        graphic symbolizing transformation,
+                        pressure, and inner power. The design reflects those who’ve been through disorder — and came out
+                        stronger.
+                    </p>
+                    <p>
+                        Oversized fit for a relaxed, dominant silhouette.
+                        Perfect for the gym, the streets, or anywhere you carry your presence.
+                    </p>
+                    <p>You’re not made for comfort.<br>You’re made from chaos.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="product-btn_container">
+            <!--<div class="product-btn">
+                <div class="product-controls">
+                    <div class="color-selector">
+                        <button class="color-btn color-black" data-color="black"></button>
+                        <button class="color-btn color-white" data-color="white"></button>
+                        <button class="color-btn color-red" data-color="red"></button>
+                        <button class="color-btn color-black" data-color="black"></button>
+                        <button class="color-btn color-white" data-color="white"></button>
+                    </div>
+                    <div class="size-selector">
+                        <button class="size-btn" data-size="M">M</button>
+                        <button class="size-btn" data-size="L">L</button>
+                        <button class="size-btn" data-size="XL">XL</button>
+                        <button class="size-btn" data-size="XXL">XXL</button>
+                        <button class="size-btn" data-size="XXXL">XXXL</button>
+                    </div>
+                </div>
+
+                <button class="guide-btn">Order size</button>-->
+            <div class="purchase-actions">
+                <button class="btn-buy"
+                    onclick="window.location.href='https://www.paypal.com/ncp/payment/HEQHXV7VRSYE4'">Buy now</button>
+                <!--<button class="btn-wishlist">In wish list</button>-->
+            </div>
+        </div>
+        </div>
+        </div>
+    </main>
+    <script src="../../hpscr/gal_ct-wb.js"></script>
+    <!--<script src="/hpscr/stat.js"></script> -->
+</body>
+
+</html>
