@@ -332,6 +332,7 @@ p {
     .bg-logo {
         width: 300px;
         opacity: 0.05;
+        top: 35%;
     }
 }
 
@@ -380,6 +381,12 @@ p {
         width: 20px;
         height: 20px;
     }
+        .bg-logo {
+        width: 300px;
+        opacity: 0.05;
+        top: 35%;
+    }
+}
 
     .bg-logo {
         width: 250px;
