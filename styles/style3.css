@@ -890,7 +890,9 @@ a.logo-link:hover .logo-img {
   .story-products {
     display: none;
   }
-
+ #story::before {
+    transform: scale(1.1) rotate(0deg);
+ }
   /* ===== FOOTER ===== */
 
   .footer {
@@ -907,3 +909,4 @@ a.logo-link:hover .logo-img {
 }
 
 /* #endregion */
+ 
