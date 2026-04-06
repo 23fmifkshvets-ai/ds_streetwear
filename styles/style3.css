@@ -17,7 +17,7 @@
 }
 
 html {
-  /**/
+
   scroll-behavior: smooth;
   scroll-snap-type: y proximity;
   scroll-padding-top: 0;
@@ -39,7 +39,7 @@ body {
   font-family: 'JetBrains Mono', monospace;
   font-weight: 400;
   line-height: 1.4;
-  background: #000;
+  background: #fff;
   color: #111;
   overscroll-behavior-y: contain;
 }
@@ -69,7 +69,7 @@ body {
   border-radius: 4px;
 }
 
-/* Повзунок при наведенні */
+
 ::-webkit-scrollbar-thumb:hover {
   background: #f5c400;
 }
@@ -298,7 +298,6 @@ a.logo-link:hover .logo-img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
-  background: #fff
 }
 
 /*.products-group {
