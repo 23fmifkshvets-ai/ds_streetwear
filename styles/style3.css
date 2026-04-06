@@ -42,6 +42,13 @@ body {
   background: #fff;
   color: #111;
   overscroll-behavior-y: contain;
+   /*background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #ffffff 65%,
+    #111111 80%,
+    #000000 100%
+  );*/
 }
 
 /* body > *:first-child {
