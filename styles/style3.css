@@ -474,7 +474,7 @@ a.logo-link:hover .logo-img {
 }
 
 .story {
-  height: 200dvh;/*!!!*/
+  height: 150dvh;/*!!!*/
   /*scroll-snap-type: y mandatory;*/
   width: 100%;
   top: 0;
@@ -489,7 +489,7 @@ a.logo-link:hover .logo-img {
   overflow: hidden;
   position: sticky;
   isolation: isolate;
- /* transform: translateZ(0);*/
+ transform: translateZ(0);
   --overlay: 0;
 
  /* scroll-snap-align: start;
