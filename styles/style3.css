@@ -18,7 +18,7 @@
 
 html {
 
-  scroll-behavior: smooth;
+  /*scroll-behavior: smooth;*/ /*!!!!!*/
  /* scroll-snap-type: y proximity;*/
   scroll-padding-top: 0;
 }
@@ -475,7 +475,7 @@ a.logo-link:hover .logo-img {
 
 .story {
   height: 200dvh;/*!!!*/
-  scroll-snap-type: y mandatory;
+  /*scroll-snap-type: y mandatory;*/
   width: 100%;
   top: 0;
 
@@ -492,10 +492,10 @@ a.logo-link:hover .logo-img {
  /* transform: translateZ(0);*/
   --overlay: 0;
 
-  scroll-snap-align: start;
-  /*scroll-margin-top: 1px;*/
+ /* scroll-snap-align: start;
 
-  scroll-snap-stop: always;
+
+  scroll-snap-stop: always;*/
 }
 
 .story::before {
@@ -530,7 +530,7 @@ a.logo-link:hover .logo-img {
   --bg-x: 50%;
   --bg-y: 35%;
   z-index: 1;
-scroll-snap-stop: always;
+/*scroll-snap-stop: always;*/
 }
 
 .story-1::before {
@@ -553,7 +553,7 @@ scroll-snap-stop: always;
   --bg-x: 10%;
   --bg-y: 20%;
   z-index: 2;
-  scroll-snap-stop: always;
+  /*scroll-snap-stop: always;*/
 
 }
 
@@ -571,7 +571,7 @@ scroll-snap-stop: always;
   --bg-x: 10%;
   --bg-y: 20%;
   z-index: 3;
-  scroll-snap-stop: always!
+ /* scroll-snap-stop: always;*/
 }
 
 .story-3::before {
