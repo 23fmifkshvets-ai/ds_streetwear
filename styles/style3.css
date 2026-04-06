@@ -474,7 +474,7 @@ a.logo-link:hover .logo-img {
 }
 
 .story {
-  height: 100dvh;
+  height: 200dvh;/*!!!*/
   width: 100%;
   top: 0;
 
