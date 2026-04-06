@@ -39,16 +39,16 @@ body {
   font-family: 'JetBrains Mono', monospace;
   font-weight: 400;
   line-height: 1.4;
-  background: #fff;
+  /*background: #fff;*/
   color: #111;
   overscroll-behavior-y: contain;
-   /*background: linear-gradient(
+   background: linear-gradient(
     to bottom,
     #ffffff 0%,
     #ffffff 65%,
     #111111 80%,
     #000000 100%
-  );*/
+  );
 }
 
 /* body > *:first-child {
