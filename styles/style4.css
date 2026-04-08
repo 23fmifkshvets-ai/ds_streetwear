@@ -506,6 +506,49 @@ a.logo-link:hover .logo-img {
   column-gap: 10px;
 }
 
+.btn-wishlist {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px 18px 12px 24px;
+  border: 1.5px solid #000;
+  border-radius: 5px;
+  background: transparent;
+
+  font-size: 13px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  color: #000;
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.icon-btn {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  /* важливо */
+  fill: none;
+  stroke-width: 1.6;
+
+  transition: transform 0.25s ease;
+}
+
+.btn-wishlist:hover {
+  background: #000;
+  color: #fff;
+}
+.btn-wishlist:hover .icon-btn {
+  transform: translateY(-6px) scale(1.25);
+}
+.btn-wishlist:active {
+  transform: scale(0.97);
+}
+
 .btn-buy {
   /*max-width: 100%;*/
   background: #000;
