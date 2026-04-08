@@ -114,6 +114,14 @@
 
                 <button class="guide-btn">Order size</button>-->
             <div class="purchase-actions">
+                <button class="icon btn-wishlist" id="cart-btn-1"
+                  onclick="window.open('https://paypal.com/ncp/cart/9XRCSR3N2K2KG', '_blank')">
+                <span class="btn-wish-text">In wish list</span>
+                <svg class="icon-btn " viewBox="0 0 24 24">
+                 <path d="M6 8h12l-1.5 12h-9z" />
+                 <path d="M9 8V6a3 3 0 0 1 6 0v2" />
+            </svg>
+          </button>
                 <button class="btn-buy"
                     onclick="window.location.href='https://www.paypal.com/ncp/payment/5CJKKDE83PJ24'">Buy now</button>
                 <!--<button class="btn-wishlist">In wish list</button>-->
@@ -123,6 +131,23 @@
     </main>
     <script src="../../hpscr/out_t.js"></script>
     <!--<script src="/hpscr/stat.js"></script> -->
+      <script src="https://www.paypalobjects.com/ncp/cart/cart.js" data-merchant-id="WQ38VQD8QQFPG"></script>
+
+  <script>
+    window.onload = function () {
+      const btn = document.getElementById("cart-btn-1");
+
+      btn.addEventListener("click", function () {
+        if (window.cartPaypal) {
+          cartPaypal.AddToCart({
+            id: "9XRCSR3N2K2KG"
+          });
+        } else {
+          console.log("PayPal не підгрузився");
+        }
+      });
+    };
+  </script>
 </body>
 
 </html>
