@@ -51,9 +51,9 @@ body {
   );
 }
 
-/* body > *:first-child {
-     scroll-snap-align: start;
-   }*/
+a, button {
+  -webkit-tap-highlight-color: rgba(255,255,255,0.2);
+}
 
 /* LAYOUT */
 .container {
