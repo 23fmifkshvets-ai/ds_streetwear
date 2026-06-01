@@ -1,0 +1,267 @@
+/* .collection-page{
+    opacity:1 !important;
+} */
+
+body{
+    opacity:0;
+    animation:pageFade .8s ease forwards;
+}
+
+.header-est,
+.header-center,
+.header-right{
+    transition: opacity .3s ease;
+}
+
+.header:has(.menu-overlay:target) .header-est,
+.header:has(.menu-overlay:target) .header-right{
+    opacity: .15;
+}
+
+.collection-section{
+    max-width:1200px;
+    margin:120px auto;
+    padding:0 20px;
+    opacity:0;
+    transform:translateY(20px);
+    animation:fadeUp .8s ease forwards;
+}
+
+.collection-header{
+    max-width:900px;
+    margin:0 auto 80px;
+    text-align:center;
+    opacity:0;
+    transform:translateY(20px);
+    animation:fadeUp .7s ease forwards;
+}
+
+.collection-header h1{
+    font-family: 'JetBrains Mono', monospace;
+    font-size:clamp(42px,5vw,70px);
+    font-weight:400;
+    letter-spacing:2px;
+    margin-bottom:40px;
+}
+
+
+.collection-description{
+    max-width: 850px;
+    margin: 0 auto;
+    
+    font-family:'JetBrains Mono', monospace;
+    font-size:14px;
+    line-height:2;
+
+    text-align:left;
+}
+
+.collection-description p{
+    margin-bottom:32px;
+}
+
+.collection-products{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    opacity:0;
+    transform:translateY(20px);
+    animation:fadeUp .7s ease .3s forwards;
+}
+
+.collection-product{
+    position:relative;
+    border:1px solid rgba(0,0,0,.15);
+    padding:20px;
+    text-align:center;
+    background:#fff;
+    transition:
+        background .3s ease,
+        transform .3s ease,
+        border-color .3s ease;
+}
+
+
+.collection-product img{
+    width:100%;
+    height:320px;
+    display:block;
+    aspect-ratio:1/1;
+    object-fit:contain;
+    margin-bottom:20px;
+    height:320px;
+}
+ .tshirt25 {
+    transform:scale(1.25);
+}
+.collection-product{
+    overflow:hidden;
+}
+
+.collection-product img{
+    transition:
+        transform .35s ease,
+        filter .35s ease;
+}
+
+.collection-product:hover{
+    background: rgba(0, 0, 0, 0.08);
+}
+.collection-product:hover .collection-btn{
+    border-color: rgba(0, 0, 0, 0.08);
+}
+.collection-product h2{
+    font-family: 'JetBrains Mono', monospace;
+    font-size:18px;
+    font-weight:500;
+    height: 60px;
+    letter-spacing:1px;
+    margin-bottom:15px;
+}
+
+.product-price{
+    font-family: 'JetBrains Mono', monospace;
+    font-size:15px;
+    margin-bottom:20px;
+}
+
+.collection-btn{
+    display:inline-block;
+    padding:12px 28px;
+    border:1px solid #000;
+    color:#000;
+    background:#fff;
+    position:relative;
+    z-index:2;
+    text-decoration:none;
+    font-family: 'JetBrains Mono', monospace;
+    font-size:13px;
+    letter-spacing:1px;
+    transition:
+        border-color .3s ease,
+        background .3s ease,
+        color .3s ease;
+}
+
+.collection-btn:hover{
+    background:#000;
+    color:#fff;
+}
+
+@keyframes pageFade{
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media (max-width: 767px){
+
+    .collection-section{
+        margin:60px auto;
+        padding:0 15px;
+    }
+
+    .collection-header h1{
+        font-size: 36px;
+    }
+
+    .collection-description{
+        font-size:13px;
+        line-height:1.8;
+        text-align:center;
+    }
+
+    .collection-products{
+        grid-template-columns:1fr;
+        gap:20px;
+        padding:15px;
+    }
+    
+    .collection-products h2{
+        font-size:clamp(16px,1.2vw,18px);
+        font-weight:500;
+        height: 40px;
+        padding-bottom: 10px;
+        margin-bottom: 5px;
+        white-space: nowrap;
+    }
+  
+    .collection-product img{
+        height:280px;
+    }
+                 
+    .shrts25 {
+        transform: scale(0.8);
+    } 
+
+    .collection-product:hover{
+        background: transparent;
+    }
+
+    .collection-product:hover .collection-btn{
+        border-color:#000;
+    }
+
+    .collection-btn:hover{
+        background:#fff;
+        color:#000;
+    }
+
+    .collection-product:active{
+        background: rgba(0, 0, 0, 0.08);
+        transform: scale(.985);
+    }
+    .collection-product:active .collection-btn{
+        border-color: rgba(0, 0, 0, 0.08);
+    }
+
+    .collection-btn:active{
+        background:#000;
+        color:#fff;
+    }
+
+    .product-price{
+        padding-bottom: 5px;
+    }
+
+
+}
+@media (max-width: 400px) {
+.collection-header h1{
+    font-size: 28px;
+}
+.product-price{
+    margin-bottom: 6px;
+    font-size: 11px;
+}
+.collection-product img {
+    height: 180px;
+}
+.collection-products h2{
+    font-size:clamp(12px,1.2vw,14px);
+    font-weight:400;
+    height: 30px;
+}
+.collection-product a{
+    font-size: 11px;
+}
+.collection-btn{
+    padding: 10px 18px;
+}
+}

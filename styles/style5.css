@@ -57,8 +57,9 @@ button {
   text-align: center;
   font-family: 'JetBrains Mono', monospace;
   appearance: none;
-  -webkit-appearance: none;
   border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .color-black {
@@ -68,7 +69,6 @@ button {
 .color-white {
   background: white;
   border: 1px solid #ccc;
-  /* щоб було видно */
 }
 
 .color-red {
@@ -88,7 +88,6 @@ button {
   background: #333;
   border-radius: 4px;
 }
-
 
 ::-webkit-scrollbar-thumb:hover {
   background: #f5c400;
@@ -207,7 +206,6 @@ button {
 }
 
 /*----ICONS-----*/
-
 
 .icon {
   background: none;
@@ -406,6 +404,36 @@ a.logo-link:hover .logo-img {
   padding-left: 15px;
 }
 
+.new-row {
+  white-space: pre-line;
+}
+
+.li-title {
+  margin-bottom: 0 !important;
+}
+
+.aet-li {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.li-title,
+.li-title span {
+  font-weight: 900;
+  list-style: none;
+}
+
+.post-text {
+  margin-top: 15px;
+  margin-bottom: -5px;
+}
+
+.post-text span {
+  font-style: italic;
+  font-size: 11px;
+}
+
+
 /*---- anime---*/
 .product-btn_container {
   width: 100%;
@@ -420,6 +448,7 @@ a.logo-link:hover .logo-img {
 
 }
 
+/* сама анімація */
 @keyframes productReveal {
   to {
     opacity: 1;
@@ -445,7 +474,35 @@ a.logo-link:hover .logo-img {
 .product-btn_container {
   will-change: transform, opacity;
 }
+.new-row {
+  white-space: pre-line;
+}
 
+.li-title {
+  margin-bottom: 0 !important;
+}
+
+.aet-li {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.li-title,
+.li-title span {
+  font-weight: 900;
+  list-style: none;
+}
+
+.post-text {
+  margin-top: auto;
+  margin-bottom: -5px;
+  padding: 5px 20px;
+}
+
+.post-text span {
+  font-style: italic;
+  font-size: 11px;
+}
 /*---- anime---*/
 
 .product-btn {
@@ -537,7 +594,7 @@ a.logo-link:hover .logo-img {
 .color-selector {
   width: 100%;
 }*/
-
+/*
 .size-selector {
   display: flex;
   overflow-x: auto;
@@ -562,7 +619,7 @@ a.logo-link:hover .logo-img {
   color: #fff;
 }
 
-/*.guide-btn {
+.guide-btn {
   background: none;
   border: 1px solid var(--text-main);
   color: #000000;
@@ -583,25 +640,107 @@ a.logo-link:hover .logo-img {
 
 .purchase-actions {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
   margin-top: 20px;
-  column-gap: 10px;
+  gap: 10px;
+}
+
+.buy-box {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  background: inherit;
+  border-radius: 3px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.buy-box:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
+}
+
+.buy-options {
+  display: flex;
+  gap: 15px;
+}
+
+.buy-options>* {
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 .btn-buy {
-  /*max-width: 100%;*/
-  background: #000;
-  color: #fff;
-  border: none;
-  padding: 12px 140px;
+  flex: 1;
+  width: 100%;
+  background: #fff;
+  color: #040404;
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  padding: 14px 40px;
   font-weight: bold;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   cursor: pointer;
-  border-radius: 5px;
   font-size: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  transition: all 0.2s ease;
 }
 
+.img-paypal {
+  width: 75px;
+  height: auto;
+  display: block;
+  background: none;
+  opacity: 0.5;
+  filter: brightness(0.7) contrast(0.8);
+
+  transition: all 0.3s ease;
+}
+
+.img-stripe {
+  width: 40px;
+  height: auto;
+  display: block;
+  background: none;
+  opacity: 0.5;
+  filter: brightness(0.7) contrast(0.8);
+
+  transition: all 0.3s ease;
+}
+
+.btn-buy:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 0 #555454;
+}
+
+.btn-buy.stripe:hover .img-stripe {
+  opacity: 1;
+  filter: brightness(1) contrast(1);
+  transform: scale(1.05);
+}
+
+.btn-buy:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #a29292;
+}
+
+.btn-buy.paypal:hover .img-paypal {
+  opacity: 1;
+  filter: brightness(1) contrast(1);
+  transform: scale(1.05);
+}
+
+.subtext{
+  font-size: 10 px;
+  color: #040404;
+  }
 /*.btn-wishlist {
   border: 1px solid #000000;
   color: #040404;
@@ -736,6 +875,51 @@ a.logo-link:hover .logo-img {
   }
 }
 
+@media (max-width: 768px) {
+
+  /*---start btn-by -----*/
+  .buy-box {
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+  }
+
+  .buy-box:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .buy-options {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn-buy {
+    padding: 18px 50px;
+    font-size: 18px;
+  }
+
+  .img-stripe,
+  .img-paypal {
+    opacity: 1;
+    filter: none;
+    transform: none;
+  }
+
+  .btn-buy:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .btn-buy:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  /*---end btn-buy ---*/
+}
+
+
 @media(max-width: 473px) {
 
   .size-selector,
@@ -752,12 +936,11 @@ a.logo-link:hover .logo-img {
   }
 
   .btn-buy {
-    padding: 10px 60px;
+    padding: 15px 40px;
     font-size: 14px;
   }
 
   .color-btn {
     padding: 11px 6px;
   }
-
 }

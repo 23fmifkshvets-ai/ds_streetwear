@@ -16,7 +16,8 @@ html {
 
 html,
 body {
-    overflow-x: clip;
+
+    overflow-x: hidden;
 }
 
 body {
@@ -26,7 +27,6 @@ body {
     font-family: 'JetBrains Mono', monospace;
     font-weight: 400;
     line-height: 1.4;
-    overflow-x: hidden;
 }
 
 /* LAYOUT */
@@ -166,8 +166,8 @@ body {
     padding: 0 8px;
 
     background: white;
-
     text-decoration: none;
+
     color: black;
 
     font-size: 24px;
@@ -188,15 +188,6 @@ body {
 
 }
 
-/*.bg-logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1000px;
-    opacity: 0.06;
-    pointer-events: none;
-}*/
 .bg-logo {
     position: fixed;
 
@@ -206,6 +197,7 @@ body {
     transform: translate(-50%, -50%);
 
     width: 400px;
+
     max-width: 80vw;
 
     opacity: .06;
@@ -214,6 +206,7 @@ body {
     pointer-events: none;
 }
 
+/*
 @media (max-width: 900px) {
 
     .intro {
@@ -224,7 +217,7 @@ body {
         background: white;
         color: black;
     }
-}
+}*/
 
 @media (max-width: 768px) {
     .about {
@@ -244,25 +237,22 @@ body {
 
     .about-home {
         font-size: 18px;
-        top: -15px;
         letter-spacing: 0.2em;
+        top: -15px;
     }
 
     .logo {
         width: 140px;
     }
-
-    .bg-logo {
-        width: 70vw;
-        opacity: 0.05;
+     .bg-logo {
+        width: 350px;
     }
-
-}
 
 @media (max-width: 480px) {
 
     .about-text {
         font-size: 14px;
+
     }
 
     .about-text h1 {
@@ -271,13 +261,11 @@ body {
 
     .about-home {
         font-size: 16px;
-        top: -15px;
         letter-spacing: 0.2em;
     }
 
      .bg-logo {
-        width: 70vw;
-        opacity: 0.05;
+        width: 350px;
     }
 
 }
