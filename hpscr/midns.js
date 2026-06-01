@@ -1,7 +1,7 @@
 
 const images = [
-    "../../../img/out/out_fw.jpg",
-    "../../../img/out/out_bk.jpg"
+    "../../../img/midn/midn-bk.webp",
+    "../../../img/midn/midn-fw.jpg"
 ];
 
 let currentImage = 0;

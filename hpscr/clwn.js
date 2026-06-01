@@ -1,18 +1,9 @@
-document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".logo-link").forEach(link => {
-        link.addEventListener("click", function (e) {
-            e.preventDefault();
-        });
-    });
-});
-
-
 
 const images = [
-     "../../img/clwn/white_cl_f2.jpg",
-    "../../img/clwn/white_cl_bk.jpg",
-    "../../img/clwn/black_cl_f.jpg",
-    "../../img/clwn/black_cl_b.jpg"
+    "../../../img/clwn/white_cl_f2.jpg",
+    "../../../img/clwn/white_cl_bk.jpg",
+    "../../../img/clwn/black_cl_f.jpg",
+    "../../../img/clwn/black_cl_b.jpg"
 ];
 
 let currentImage = 0;

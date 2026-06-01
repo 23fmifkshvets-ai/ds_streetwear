@@ -1,12 +1,10 @@
 
 const images = [
-    "../../../img/gvt/gvt-fw.jpg",
-    "../../../img/gvt/gvt-bk.jpg",
-    "../../../img/gvt/gvt-1.jpg",
-    "../../../img/gvt/gvt-2.jpg",
-    "../../../img/gvt/gvt-3.jpg",
-    "../../../img/gvt/gvt-4.jpg",
-    "../../../img/gvt/gvt-5.jpg"
+    "../../../img/aetee/aet-fw-2.webp",
+    "../../../img/aetee/aet-bk.webp",
+    "../../../img/aetee/aet-unpk1.jpg",
+    "../../../img/aetee/aet-unpk2.jpg",
+    "../../../img/aetee/aet-pk.jpg"
 ];
 
 let currentImage = 0;
@@ -34,24 +32,18 @@ function prevImage() {
 
 
 
-
-document.querySelectorAll('.size-btn').forEach(button => {
+// COLOR
+document.querySelectorAll('.color-btn').forEach(button => {
     button.addEventListener('click', () => {
-        
-        document.querySelectorAll('.size-btn').forEach(btn => btn.classList.remove('active'));
-        
+        document.querySelectorAll('.color-btn').forEach(btn => btn.classList.remove('active'));
         button.classList.add('active');
     });
 });
-
-window.addEventListener('DOMContentLoaded', () => {
-
-  const bar = document.querySelector('.announcement-bar');
-
-  setInterval(() => {
-    bar.classList.toggle('invert');
-  }, 11000);
-
+// SIZE
+document.querySelectorAll('.size-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        document.querySelectorAll('.size-btn').forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+    });
 });
-
 

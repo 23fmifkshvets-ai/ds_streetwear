@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../styles/style5.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>DS BASKETBALL 25 Vintage</title>
+</head>
+
+<body>
+    <div class="header-wrapper">
+        <header class="header">
+            <div class="header-left">
+                <a href="#menu" class="icon">
+                    <svg class="icon-svg" viewBox="0 0 24 24">
+                        <path d="M3 6h18M3 12h18M3 18h18" />
+                    </svg>
+                </a>
+
+                <div id="menu" class="menu-overlay">
+
+                    <a href="#!" class="menu-close">✕</a>
+
+                    <nav class="menu">
+                        <a href="../../index.html">Home</a>
+                        <a href="../dc_gv_tee.html">DS Forge</a>
+                        <a href="../../info/about_us.html">About Us</a>
+                        <a href="../../info/contacts.html">Contacts</a>
+                        <div class="lang-switch" id="lang-switch">
+                            <img src="../../../../img/elements/de-flag.svg" class="lang-flag">
+                            <span>DE</span>
+                        </div>
+                    </nav>
+                </div>
+
+                <!--svg icon circle-->
+            </div>
+
+            <div class="header-center">
+                <a href="../../../../index.html" class="logo-link">
+                    <img src="../../../../img/elements/logo.svg" alt="DS" class="logo-img">
+                </a>
+            </div>
+
+            <div class="header-right">
+                <button class="icon">
+                    <svg class="icon-svg" viewBox="0 0 24 24">
+                        <path d="M6 8h12l-1.5 12h-9z" />
+                        <path d="M9 8V6a3 3 0 0 1 6 0v2" />
+                    </svg>
+                </button>
+                <div class="avatar"></div>
+            </div>
+        </header>
+    </div>
+
+    <main class="product-page">
+        <div class="product-container">
+
+            <div class="product-gallery">
+                <div class="image-wrapper">
+                    <button class="arrow left" onclick="prevImage()">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M15 18l-6-6 6-6" />
+                        </svg>
+                    </button>
+                    <img id="product-image" src="../../../../img/ds-basket/25/25fw.webp" alt="DS BASKETBALL 25 Vintage">
+                    <button class="arrow right" onclick="nextImage()">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M9 6l6 6-6 6" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h1 class="product-title">DS BASKETBALL 25 Vintage</h1>
+
+                <div class="product-description">
+                    <p>
+                        Inspired by classic college and basketball jerseys, the DS BASKETBALL 25 Tee combines a timeless athletic look with a modern streetwear fit. </p>
+                    <p>
+                        The front features the signature ATHLETIK DS logo, while the back is finished with a bold varsity-style number 25 and DS ATHLETIK branding.
+                    </p>
+                    <p>
+                        The vintage-textured graphics create a worn-in championship feel, 
+                        making this piece perfect both for training sessions and everyday wear. Crafted for athletes, lifters, and anyone who appreciates clean sports-inspired fashion.
+                    </p>
+                    <p>Part of the new DS BASKETBALL Collection, which will also include matching shorts and a hoodie.</p>
+
+                </div>
+                <div class="post-text">
+                    <p>
+                        <span>You can choose the size and delivery address by clicking the “Buy” button below.</span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="product-btn_container">
+            <div class="purchase-actions buy-box">
+                <div class="buy-options">
+
+                    <button id="payment-request-button" class="btn-buy stripe"
+                        onclick="window.location.href='https://buy.stripe.com/5kQ28ta3ZcrsaP7cJw0x20b'">
+                        <img src="../../../../img/elements/apay.svg" class="img-stripe">
+                        <img src="../../../../img/elements/gpay.svg" class="img-stripe">
+                    </button>
+
+                    <button class="btn-buy paypal" onclick="window.location.href='https://www.paypal.com/ncp/payment/QSPNB3A6ZDW8E'">
+                        <img src="../../../../img/elements/paypal-icon.svg" class="img-paypal">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../../../../hpscr/basket/switch-lang.js"></script>
+    <script src="../../../../hpscr/basket/25.js"></script>
+    <!--<script src="/hpscr/stat.js"></script> -->
+</body>
+
+</html>

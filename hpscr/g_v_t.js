@@ -1,7 +1,7 @@
 
 const images = [
-    "../../../img/out/out_fw.jpg",
-    "../../../img/out/out_bk.jpg"
+    "../../../img/t-shirt/g_v_t.png",
+    "../../../img/t-shirt/g_v_t_fw.webp"
 ];
 
 let currentImage = 0;
@@ -29,14 +29,14 @@ function prevImage() {
 
 
 
-// COLOR
+
 document.querySelectorAll('.color-btn').forEach(button => {
     button.addEventListener('click', () => {
         document.querySelectorAll('.color-btn').forEach(btn => btn.classList.remove('active'));
         button.classList.add('active');
     });
 });
-// SIZE
+
 document.querySelectorAll('.size-btn').forEach(button => {
     button.addEventListener('click', () => {
         document.querySelectorAll('.size-btn').forEach(btn => btn.classList.remove('active'));
@@ -44,3 +44,10 @@ document.querySelectorAll('.size-btn').forEach(button => {
     });
 });
 
+
+document.querySelectorAll('.size-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        document.querySelectorAll('.size-btn').forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+    });
+});
