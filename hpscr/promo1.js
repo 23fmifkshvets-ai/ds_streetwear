@@ -4,7 +4,7 @@ if (window.innerWidth >= 768) {
   video.src = "../../ds-vid-7-1.mp4";
 } else {
   video.src = "../../ds-vid-7-m.mp4";
-} */
+} 
 
 const video = document.getElementById("heroVideo");
 
@@ -18,7 +18,7 @@ if (window.innerWidth >= 768) {
 
 console.log(video.src);
 video.load();
-
+*/
 
 
 
