@@ -754,6 +754,24 @@ a.logo-link:hover .logo-img {
   font-size: 16px; 
 }*/
 
+.size-guide-wrapper {
+  padding: 0 15px;
+}
+
+.size-guide-wrapper h3 {
+  text-align: center;
+  margin: 15px 0;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.size-guide-img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 25px;
+  border: 1px solid #e5e5e5;
+
 @media (orientation: landscape) and (max-height: 500px) {
 
   .header-wrapper,
@@ -874,6 +892,15 @@ a.logo-link:hover .logo-img {
 
   .btn-buy {
     padding: 12px 80px;
+  }
+    .size-guide {
+    margin-top: 25px;
+    padding: 15px;
+  }
+
+  .size-guide-title {
+    font-size: 16px;
+    margin-bottom: 15px;
   }
 }
 
